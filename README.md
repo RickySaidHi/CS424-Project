@@ -2,8 +2,6 @@
 
 ## Task One
 
-# UIC Study Space Availability
-
 | Attribute | Type | Description | Example |
 | --- | --- | --- | --- |
 | `visit_id` | Identifier | Unique ID for each location visit | `001` |
