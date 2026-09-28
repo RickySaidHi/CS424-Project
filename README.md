@@ -1,7 +1,19 @@
 # CS 424 UIC Study Space Availability
 
 ## Task One
+### Collection Method
+We plan on collecting by manually checking each area and checking the amount of available and taken chairs and tables. We will do this periodically each day over the course of the week focusing on the major times throughout a typical UIC students schedule. 
 
+#### Ricky Ardisana collection times:
+
+| Monday | Tuesday | Wednesday | Thursday | Friday |
+| --- | --- | --- | --- | --- |
+|8:30 AM | 8:30 AM | 8:30 AM | | |
+|12:30 PM | 12:30 PM | 12:30 PM | 12:30 PM | |
+| | | 3:30 PM | | |
+
+
+### Collection Table
 | Attribute | Type | Description | Example |
 | --- | --- | --- | --- |
 | `visit_id` | Identifier | Unique ID for each location visit | `001` |
