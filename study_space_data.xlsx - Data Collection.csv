@@ -1,0 +1,32 @@
+visit_id,location,date,day,time,semester_week,temperature,weather,total_chairs,total_tables,occupied_chairs,available_chairs,occupied_tables,available_tables
+1,montgomery lounge,9/29/2026,Tuesday,9:00,6,63,Sunny,72,10,23,49,10,0
+2,1st floor circle lounge,9/29/2026,Tuesday,9:00,6,63,Sunny,182,32,15,167,13,19
+3,pier room,9/29/2026,Tuesday,9:00,6,63,Sunny,116,26,32,84,24,2
+4,west terrace,9/29/2026,Tuesday,9:00,6,63,Sunny,128,37,3,125,3,34
+5,commuter center,9/29/2026,Tuesday,9:00,6,63,Sunny,54,23,33,21,20,3
+6,inner circle,9/29/2026,Tuesday,9:00,6,63,Sunny,282,70,29,253,19,51
+7,east terrace,9/29/2026,Tuesday,9:00,6,63,Sunny,78,26,22,56,21,5
+8,,,Saturday,,,,,,,,0,,0
+9,,,Saturday,,,,,,,,0,,0
+10,,,Saturday,,,,,,,,0,,0
+11,,,Saturday,,,,,,,,0,,0
+12,,,Saturday,,,,,,,,0,,0
+13,,,Saturday,,,,,,,,0,,0
+14,,,Saturday,,,,,,,,0,,0
+15,,,Saturday,,,,,,,,0,,0
+16,,,Saturday,,,,,,,,0,,0
+17,,,Saturday,,,,,,,,0,,0
+18,,,Saturday,,,,,,,,0,,0
+19,,,Saturday,,,,,,,,0,,0
+20,,,Saturday,,,,,,,,0,,0
+21,,,Saturday,,,,,,,,0,,0
+22,,,Saturday,,,,,,,,0,,0
+23,,,Saturday,,,,,,,,0,,0
+24,,,Saturday,,,,,,,,0,,0
+25,,,Saturday,,,,,,,,0,,0
+26,,,Saturday,,,,,,,,0,,0
+27,,,Saturday,,,,,,,,0,,0
+28,,,Saturday,,,,,,,,0,,0
+29,,,Saturday,,,,,,,,0,,0
+30,,,Saturday,,,,,,,,0,,0
+31,,,Saturday,,,,,,,,0,,0
