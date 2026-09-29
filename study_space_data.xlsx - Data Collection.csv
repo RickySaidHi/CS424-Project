@@ -13,3 +13,10 @@ visit_id,location,date,day,time,semester_week,temperature,weather,total_chairs,t
 12,commuter center,9/29/2026,Tuesday,9:09,6,63,Sunny,54,23,33,21,20,3
 13,inner circle,9/29/2026,Tuesday,9:11,6,63,Sunny,282,70,29,253,19,51
 14,east terrace,9/29/2026,Tuesday,9:13,6,63,Sunny,78,26,22,56,21,5
+15,1st floor circle lounge,9/29/2026,Tuesday,13:32,6,75,Sunny,182,32,71,111,32,0
+16,montgomery lounge,9/29/2026,Tuesday,13:34,6,75,Sunny,72,10,56,16,10,0
+17,pier room,9/29/2026,Tuesday,13:36,6,75,Sunny,116,26,88,28,26,0
+18,east terrace,9/29/2026,Tuesday,13:39,6,75,Sunny,78,26,37,41,24,2
+19,west terrace,9/29/2026,Tuesday,13:41,6,75,Sunny,128,37,80,48,34,3
+20,inner circle,9/29/2026,Tuesday,13:45,6,75,Sunny,282,70,89,193,62,8
+21,commuter center,9/29/2026,Tuesday,13:47,6,75,Sunny,54,23,41,13,23,0
