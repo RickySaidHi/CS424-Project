@@ -1,32 +1,15 @@
 visit_id,location,date,day,time,semester_week,temperature,weather,total_chairs,total_tables,occupied_chairs,available_chairs,occupied_tables,available_tables
-1,montgomery lounge,9/29/2026,Tuesday,9:00,6,63,Sunny,72,10,23,49,10,0
-2,1st floor circle lounge,9/29/2026,Tuesday,9:00,6,63,Sunny,182,32,15,167,13,19
-3,pier room,9/29/2026,Tuesday,9:00,6,63,Sunny,116,26,32,84,24,2
-4,west terrace,9/29/2026,Tuesday,9:00,6,63,Sunny,128,37,3,125,3,34
-5,commuter center,9/29/2026,Tuesday,9:00,6,63,Sunny,54,23,33,21,20,3
-6,inner circle,9/29/2026,Tuesday,9:00,6,63,Sunny,282,70,29,253,19,51
-7,east terrace,9/29/2026,Tuesday,9:00,6,63,Sunny,78,26,22,56,21,5
-8,,,Saturday,,,,,,,,0,,0
-9,,,Saturday,,,,,,,,0,,0
-10,,,Saturday,,,,,,,,0,,0
-11,,,Saturday,,,,,,,,0,,0
-12,,,Saturday,,,,,,,,0,,0
-13,,,Saturday,,,,,,,,0,,0
-14,,,Saturday,,,,,,,,0,,0
-15,,,Saturday,,,,,,,,0,,0
-16,,,Saturday,,,,,,,,0,,0
-17,,,Saturday,,,,,,,,0,,0
-18,,,Saturday,,,,,,,,0,,0
-19,,,Saturday,,,,,,,,0,,0
-20,,,Saturday,,,,,,,,0,,0
-21,,,Saturday,,,,,,,,0,,0
-22,,,Saturday,,,,,,,,0,,0
-23,,,Saturday,,,,,,,,0,,0
-24,,,Saturday,,,,,,,,0,,0
-25,,,Saturday,,,,,,,,0,,0
-26,,,Saturday,,,,,,,,0,,0
-27,,,Saturday,,,,,,,,0,,0
-28,,,Saturday,,,,,,,,0,,0
-29,,,Saturday,,,,,,,,0,,0
-30,,,Saturday,,,,,,,,0,,0
-31,,,Saturday,,,,,,,,0,,0
+1,1st floor circle lounge,9/28/2026,Monday,17:02,6,66,Sunny,182,32,39,143,22,10
+2,montgomery lounge,9/28/2026,Monday,17:04,6,66,Sunny,72,10,29,43,10,0
+3,pier room,9/28/2026,Monday,17:06,6,66,Sunny,116,26,44,72,26,0
+4,east terrace,9/28/2026,Monday,17:16,6,66,Sunny,78,26,26,52,26,0
+5,west terrace,9/28/2026,Monday,17:12,6,66,Sunny,128,37,14,114,37,0
+6,inner circle,9/28/2026,Monday,17:14,6,66,Sunny,282,70,68,214,52,18
+7,commuter center,9/28/2026,Monday,17:20,6,66,Sunny,54,23,37,17,23,0
+8,montgomery lounge,9/29/2026,Tuesday,9:00,6,63,Sunny,72,10,23,49,10,0
+9,1st floor circle lounge,9/29/2026,Tuesday,9:02,6,63,Sunny,182,32,15,167,13,19
+10,pier room,9/29/2026,Tuesday,9:05,6,63,Sunny,116,26,32,84,24,2
+11,west terrace,9/29/2026,Tuesday,9:07,6,63,Sunny,128,37,31,97,25,12
+12,commuter center,9/29/2026,Tuesday,9:09,6,63,Sunny,54,23,33,21,20,3
+13,inner circle,9/29/2026,Tuesday,9:11,6,63,Sunny,282,70,29,253,19,51
+14,east terrace,9/29/2026,Tuesday,9:13,6,63,Sunny,78,26,22,56,21,5
