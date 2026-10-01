@@ -1,29 +1,41 @@
-visit_id,location,date,day,time,semester_week,temperature,weather,total_chairs,total_tables,occupied_chairs,available_chairs,occupied_tables,available_tables
-1,1st floor circle lounge,9/28/2026,Monday,17:02,6,66,Sunny,182,32,39,143,22,10
-2,montgomery lounge,9/28/2026,Monday,17:04,6,66,Sunny,72,10,29,43,10,0
-3,pier room,9/28/2026,Monday,17:06,6,66,Sunny,116,26,44,72,26,0
-4,east terrace,9/28/2026,Monday,17:16,6,66,Sunny,78,26,26,52,26,0
-5,west terrace,9/28/2026,Monday,17:12,6,66,Sunny,128,37,14,114,37,0
-6,inner circle,9/28/2026,Monday,17:14,6,66,Sunny,282,70,68,214,52,18
-7,commuter center,9/28/2026,Monday,17:20,6,66,Sunny,54,23,37,17,23,0
-8,montgomery lounge,9/29/2026,Tuesday,9:00,6,63,Sunny,72,10,23,49,10,0
-9,1st floor circle lounge,9/29/2026,Tuesday,9:02,6,63,Sunny,182,32,15,167,13,19
-10,pier room,9/29/2026,Tuesday,9:05,6,63,Sunny,116,26,32,84,24,2
-11,west terrace,9/29/2026,Tuesday,9:07,6,63,Sunny,128,37,31,97,25,12
-12,commuter center,9/29/2026,Tuesday,9:09,6,63,Sunny,54,23,33,21,20,3
-13,inner circle,9/29/2026,Tuesday,9:11,6,63,Sunny,282,70,29,253,19,51
-14,east terrace,9/29/2026,Tuesday,9:13,6,63,Sunny,78,26,22,56,21,5
-15,1st floor circle lounge,9/29/2026,Tuesday,13:32,6,75,Sunny,182,32,71,111,32,0
-16,montgomery lounge,9/29/2026,Tuesday,13:34,6,75,Sunny,72,10,56,16,10,0
-17,pier room,9/29/2026,Tuesday,13:36,6,75,Sunny,116,26,88,28,26,0
-18,east terrace,9/29/2026,Tuesday,13:39,6,75,Sunny,78,26,37,41,24,2
-19,west terrace,9/29/2026,Tuesday,13:41,6,75,Sunny,128,37,80,48,34,3
-20,inner circle,9/29/2026,Tuesday,13:45,6,75,Sunny,282,70,89,193,62,8
-21,commuter center,9/29/2026,Tuesday,13:47,6,75,Sunny,54,23,41,13,23,0
-22,1st floor circle lounge,9/30/2026,Wednesday,8:47,6,62,Rain,182,32,9,173,8,24
-23,montgomery lounge,9/30/2026,Wednesday,8:49,6,62,Rain,72,10,22,50,10,0
-24,pier room,9/30/2026,Wednesday,8:51,6,62,Rain,116,26,28,88,18,8
-25,west terrace,9/30/2026,Wednesday,8:54,6,62,Rain,128,37,4,124,4,33
-26,commuter center,9/30/2026,Wednesday,8:55,6,62,Rain,54,23,16,38,11,12
-27,inner circle,9/30/2026,Wednesday,8:58,6,62,Rain,282,70,22,260,19,51
-28,east terrace,9/30/2026,Wednesday,9:00,6,62,Rain,78,26,24,54,17,9
+visit_id,location,date,day,time,time_of_day,semester_week,temperature,temp_bucket,weather,total_chairs,total_tables,occupied_chairs,available_chairs,chair_occupancy_rate,occupied_tables,available_tables,table_occupancy_rate
+1,first_floor_circle_lounge,9/28/2026,Monday,17:02,Afternoon,6,66,60,Sunny,182,32,39,143,21.43%,22,10,68.75%
+2,montgomery_lounge,9/28/2026,Monday,17:04,Afternoon,6,66,60,Sunny,72,10,29,43,40.28%,10,0,100.00%
+3,pier_room,9/28/2026,Monday,17:06,Afternoon,6,66,60,Sunny,116,26,44,72,37.93%,26,0,100.00%
+4,east_terrace,9/28/2026,Monday,17:16,Afternoon,6,66,60,Sunny,78,26,26,52,33.33%,26,0,100.00%
+5,west_terrace,9/28/2026,Monday,17:12,Afternoon,6,66,60,Sunny,128,37,14,114,10.94%,37,0,100.00%
+6,inner_circle,9/28/2026,Monday,17:14,Afternoon,6,66,60,Sunny,282,70,68,214,24.11%,52,18,74.29%
+7,commuter_center,9/28/2026,Monday,17:20,Afternoon,6,66,60,Sunny,54,23,37,17,68.52%,23,0,100.00%
+8,montgomery_lounge,9/29/2026,Tuesday,9:00,Morning,6,63,60,Sunny,72,10,23,49,31.94%,10,0,100.00%
+9,first_floor_circle_lounge,9/29/2026,Tuesday,9:02,Morning,6,63,60,Sunny,182,32,15,167,8.24%,13,19,40.63%
+10,pier_room,9/29/2026,Tuesday,9:05,Morning,6,63,60,Sunny,116,26,32,84,27.59%,24,2,92.31%
+11,west_terrace,9/29/2026,Tuesday,9:07,Morning,6,63,60,Sunny,128,37,31,97,24.22%,25,12,67.57%
+12,commuter_center,9/29/2026,Tuesday,9:09,Morning,6,63,60,Sunny,54,23,33,21,61.11%,20,3,86.96%
+13,inner_circle,9/29/2026,Tuesday,9:11,Morning,6,63,60,Sunny,282,70,29,253,10.28%,19,51,27.14%
+14,east_terrace,9/29/2026,Tuesday,9:13,Morning,6,63,60,Sunny,78,26,22,56,28.21%,21,5,80.77%
+15,first_floor_circle_lounge,9/29/2026,Tuesday,13:32,Midday,6,75,70,Sunny,182,32,71,111,39.01%,32,0,100.00%
+16,montgomery_lounge,9/29/2026,Tuesday,13:34,Midday,6,75,70,Sunny,72,10,56,16,77.78%,10,0,100.00%
+17,pier_room,9/29/2026,Tuesday,13:36,Midday,6,75,70,Sunny,116,26,88,28,75.86%,26,0,100.00%
+18,east_terrace,9/29/2026,Tuesday,13:39,Midday,6,75,70,Sunny,78,26,37,41,47.44%,24,2,92.31%
+19,west_terrace,9/29/2026,Tuesday,13:41,Midday,6,75,70,Sunny,128,37,80,48,62.50%,34,3,91.89%
+20,inner_circle,9/29/2026,Tuesday,13:45,Midday,6,75,70,Sunny,282,70,89,193,31.56%,62,8,88.57%
+21,commuter_center,9/29/2026,Tuesday,13:47,Midday,6,75,70,Sunny,54,23,41,13,75.93%,23,0,100.00%
+22,first_floor_circle_lounge,9/30/2026,Tuesday,18:08,Afternoon,6,62,60,Rain,182,32,25,157,13.74%,13,19,40.63%
+23,montgomery_lounge,9/30/2026,Tuesday,18:05,Afternoon,6,62,60,Rain,72,10,22,50,30.56%,10,0,100.00%
+24,pier_room,9/30/2026,Tuesday,18:13,Afternoon,6,62,60,Rain,116,26,40,76,34.48%,22,4,84.62%
+25,west_terrace,9/30/2026,Tuesday,18:11,Afternoon,6,62,60,Rain,128,37,2,126,1.56%,1,36,2.70%
+26,commuter_center,9/30/2026,Tuesday,18:18,Afternoon,6,62,60,Rain,54,23,16,38,29.63%,11,12,47.83%
+27,inner_circle,9/30/2026,Tuesday,18:15,Afternoon,6,62,60,Rain,282,70,13,269,4.61%,11,59,15.71%
+28,east_terrace,9/30/2026,Tuesday,18:10,Afternoon,6,62,60,Rain,78,26,11,67,14.10%,7,19,26.92%
+29,commuter_center,9/30/2026,Wednesday,17:53,Afternoon,6,63,60,Rain,54,23,41,14,75.93%,23,0,100.00%
+30,first_floor_circle_lounge,9/30/2026,Wednesday,8:47,Morning,6,62,60,Rain,182,32,9,173,4.95%,8,24,25.00%
+31,montgomery_lounge,9/30/2026,Wednesday,8:49,Morning,6,62,60,Rain,72,10,22,50,30.56%,10,0,100.00%
+32,pier_room,9/30/2026,Wednesday,8:51,Morning,6,62,60,Rain,116,26,28,88,24.14%,18,8,69.23%
+33,west_terrace,9/30/2026,Wednesday,8:54,Morning,6,62,60,Rain,128,37,4,124,3.13%,4,33,10.81%
+34,commuter_center,9/30/2026,Wednesday,8:55,Morning,6,62,60,Rain,54,23,16,38,29.63%,11,12,47.83%
+35,inner_circle,9/30/2026,Wednesday,8:58,Morning,6,62,60,Rain,282,70,22,260,7.80%,19,51,27.14%
+36,east_terrace,9/30/2026,Wednesday,9:00,Morning,6,62,60,Rain,78,26,24,54,30.77%,17,9,65.38%
+37,commuter_center,9/30/2026,Wednesday,12:24,Midday,6,63,60,Rain,54,23,48,6,88.89%,23,0,100.00%
+,,,,,,,,0,,,,0,,,0,,
+,,,,,,,,0,,,,0,,,0,,
+,,,,,,,,0,,,,0,,,0,,
