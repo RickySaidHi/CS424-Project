@@ -40,7 +40,7 @@ We will divide collection approximately to the schedules below. Because visiting
 
 | Monday    | Tuesday   | Wednesday | Thursday  | Friday    |
 | --------- | --------- | --------- | --------- | --------- |
-| 5:00 PM   |           | 5:00 PM   | 8:00 AM   | 8:00 AM   |
+| 5:00 PM   |           | 4:00 PM   | 8:00 AM   | 8:00 AM   |
 |           |           |           | 3:15 PM   | 1:00 PM   |
 |           |           |           |           | 5:00 PM   |
 
