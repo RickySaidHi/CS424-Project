@@ -35,12 +35,12 @@ visit_id,location,date,day,time,time_of_day,semester_week,temperature,temp_bucke
 34,commuter_center,9/30/2026,Wednesday,18:18,Afternoon,6,62,60,Rain,54,23,16,38,29.63%,11,12,47.83%
 35,inner_circle,9/30/2026,Wednesday,18:15,Afternoon,6,62,60,Rain,282,70,13,269,4.61%,11,59,15.71%
 36,east_terrace,9/30/2026,Wednesday,18:10,Afternoon,6,62,60,Rain,78,26,11,67,14.10%,7,19,26.92%
-37,commuter_center,9/30/2026,Wednesday,17:53,Afternoon,6,63,60,Rain,54,23,41,14,75.93%,23,0,100.00%
+37,commuter_center,9/30/2026,Wednesday,17:53,Afternoon,6,63,60,Rain,54,23,41,13,75.93%,23,0,100.00%
 38,first_floor_circle_lounge,10/1/2026,Thursday,8:05,Morning,6,66,60,Rain,182,32,18,164,9.89%,7,25,21.88%
 39,montgomery_lounge,10/1/2026,Thursday,8:12,Morning,6,66,60,Rain,72,10,6,66,8.33%,2,8,20.00%
 40,pier_room,10/1/2026,Thursday,8:14,Morning,6,66,60,Rain,116,26,29,87,25.00%,12,14,46.15%
 41,west_terrace,10/1/2026,Thursday,8:18,Morning,6,66,60,Rain,128,37,8,120,6.25%,3,34,8.11%
-42,commuter_center,10/1/2026,Thursday,8:21,Morning,6,66,60,Rain,54,23,14,40,29.93%,6,17,26.09%
+42,commuter_center,10/1/2026,Thursday,8:21,Morning,6,66,60,Rain,54,23,14,40,25.93%,6,17,26.09%
 43,inner_circle,10/1/2026,Thursday,8:26,Morning,6,66,60,Rain,282,70,32,250,11.35%,13,57,18.57%
 44,east_terrace,10/1/2026,Thursday,8:30,Morning,6,66,60,Rain,78,26,19,59,24.36%,8,18,30.77%
 45,commuter_center,10/1/2026,Thursday,13:00,Midday,6,72,70,Rain,54,23,39,15,72.22%,23,0,100.00%
@@ -65,3 +65,10 @@ visit_id,location,date,day,time,time_of_day,semester_week,temperature,temp_bucke
 64,commuter_center,10/2/2026,Friday,8:15,Morning,6,59,50,Cloudy,54,23,30,24,55.56%,21,2,91.30%
 65,inner_circle,10/2/2026,Friday,8:18,Morning,6,59,50,Cloudy,282,70,47,235,16.67%,27,43,38.57%
 66,east_terrace,10/2/2026,Friday,8:22,Morning,6,59,50,Cloudy,78,26,30,48,38.46%,20,6,76.92%
+67,first_floor_circle_lounge,10/2/2026,Friday,1:07,Afternoon,6,64,60,Sunny,182,32,20,162,10.99%,16,16,50.00%
+68,montgomery_lounge,10/2/2026,Friday,1:10,Afternoon,6,64,60,Sunny,72,10,23,49,31.94%,6,4,60.00%
+69,pier_room,10/2/2026,Friday,1:14,Afternoon,6,64,60,Sunny,116,26,45,71,38.79%,21,5,80.77%
+70,west_terrace,10/2/2026,Friday,1:16,Afternoon,6,64,60,Sunny,128,37,10,118,7.81%,6,31,16.22%
+71,commuter_center,10/2/2026,Friday,1:21,Afternoon,6,64,60,Sunny,54,23,32,22,59.26%,22,1,95.65%
+72,inner_circle,10/2/2026,Friday,1:25,Afternoon,6,64,60,Sunny,282,70,52,230,18.44%,31,39,44.29%
+73,east_terrace,10/2/2026,Friday,1:28,Afternoon,6,64,60,Sunny,78,26,32,46,41.03%,21,5,80.77%
