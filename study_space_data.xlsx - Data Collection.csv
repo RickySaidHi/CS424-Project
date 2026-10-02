@@ -58,3 +58,10 @@ visit_id,location,date,day,time,time_of_day,semester_week,temperature,temp_bucke
 57,first_floor_circle_lounge,10/1/2026,Thursday,16:22,Afternoon,6,67,60,Rain,182,32,50,132,27.47%,32,0,100.00%
 58,inner_circle,10/1/2026,Thursday,16:30,Afternoon,6,67,60,Rain,282,70,87,195,30.85%,48,22,68.57%
 59,east_terrace,10/1/2026,Thursday,16:32,Afternoon,6,67,60,Rain,78,26,29,49,37.18%,24,2,92.31%
+60,first_floor_circle_lounge,10/2/2026,Friday,8:03,Morning,6,59,50,Cloudy,182,32,17,165,9.34%,15,17,46.88%
+61,montgomery_lounge,10/2/2026,Friday,8:05,Morning,6,59,50,Cloudy,72,10,20,52,27.78%,6,4,60.00%
+62,pier_room,10/2/2026,Friday,8:07,Morning,6,59,50,Cloudy,116,26,41,75,35.34%,20,6,76.92%
+63,west_terrace,10/2/2026,Friday,8:11,Morning,6,59,50,Cloudy,128,37,6,122,4.69%,4,33,10.81%
+64,commuter_center,10/2/2026,Friday,8:15,Morning,6,59,50,Cloudy,54,23,30,24,55.56%,21,2,91.30%
+65,inner_circle,10/2/2026,Friday,8:18,Morning,6,59,50,Cloudy,282,70,47,235,16.67%,27,43,38.57%
+66,east_terrace,10/2/2026,Friday,8:22,Morning,6,59,50,Cloudy,78,26,30,48,38.46%,20,6,76.92%
