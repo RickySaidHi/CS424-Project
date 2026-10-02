@@ -44,6 +44,12 @@ We will divide collection approximately to the schedules below. Because visiting
 |           |           |           | 4:00 PM   | 1:00 PM   |
 |           |           |           |           | 5:00 PM   |
 
+#### Jake Jimenez Collection Times:
+
+| Monday             | Tuesday           | Wednesday          | Thursday          | Friday    |
+| ------------------ | ----------------- | ------------------ | ----------------- | --------- |
+| 10:00 – 11:00 AM   | 12:30 – 2:00 PM   | 10:00 – 11:00 AM   | 12:30 – 2:00 PM   |           |
+| 12:30 – 1:00 PM    |                   | 12:30 – 2:00 PM    |                   |           |
 
 
 
