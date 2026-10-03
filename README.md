@@ -95,6 +95,30 @@ One domain question our team would like to investigate is whether occupancy chan
 
 ## Task Four
 
+Question 1 (does occupancy change throughout the day)
+
+Task abstraction - discover the trend in occupancy rate across the ordered times of day.
+At first we thought of this as just comparing occupancy rates across the times of day (morning, midday, and afternoon). But time of day has a natural order, so the real goal isn't only seeing which time block is highest, but it's seeing whether occupancy increases or falls as the day goes on. We already noticed mornings ran lower than midday, so the task is checking if that pattern holds consistently across locations and days instead of being a one time thing.
+
+Question 2 (does weather affect occupancy in different types of spaces)
+
+Task abstraction - compare how occupancy rate depends on weather for indoor vs outdoor spaces.
+Weather is a categorical attribute (sunny, cloudy, rainy, and snow as we keep collecting more data), and we want to see how occupancy depends on it. The west terrace dropping from 62% in the sun to 1.56% in the rain made us realize the question isn't just "does weather matter," it's whether weather matters differently for outdoor spaces than indoor ones. That's why we're comparing across both weather and space type instead of weather alone.
+
+Question 3 (is there a temperature boundary where more students study indoors)
+
+Task abstraction - locate the temperature threshold where indoor occupancy starts to change.
+Temperature is quantitative, so this is about the relationship between two numeric attributes, not comparing categories. We know what we're looking for, a cutoff point, but we don't know where it is, so the goal is finding where in the temperature range the pattern shifts. One thing this made us notice is that our max temperature is 75℉ because of when we started collecting data, and given the time of year we don't expect it to go any higher. Since 75℉ is still nice enough for people to be outdoors, we probably won't see a boundary where it gets too hot and students move inside. If a boundary exists outside our range, we won't be able to find it.
+
+Question 4 (are spaces more open at certain times depending on location)
+
+Task abstraction - identify which locations are most and least likely to have open seating at different times of the day.
+The goal is to find which spaces a student is most likely to find a spot in, and whether that changes depending on when they show up. For example, the Commuter Center showed far greater usage than the inner circle, so the inner circle tends to be the better bet for an open seat. Since locations have very different chair counts, we compare the percentage of open seats instead of raw counts so a big lounge doesn't look more open just because it's bigger. We also want to look for outliers, since unusual spikes in usage could be from events rather than normal studying.
+
+Reflection
+
+When we first wrote our questions, almost every one came down to "compare occupancy across something." Turning them into abstract tasks showed us they're asking different kinds of things. Question 1 is about change over an ordered variable, Question 3 is about a relationship and a threshold, and Question 4 is about which locations are most likely to have open seats. This also changed how we think about our data. We realized we need to use occupancy rates instead of counts, that our temperature range limits what Question 3 can answer, and that Question 2 is really about how weather and space type interact, not weather on its own.
+
 ## Task Five
 
 ## Task Six
