@@ -44,6 +44,12 @@ We will divide collection approximately to the schedules below. Because visiting
 |           |           |           | 4:00 PM   | 1:00 PM   |
 |           |           |           |           | 5:00 PM   |
 
+#### Jake Jimenez Collection Times:
+
+| Monday             | Tuesday           | Wednesday          | Thursday          | Friday    |
+| ------------------ | ----------------- | ------------------ | ----------------- | --------- |
+| 10:00 – 11:00 AM   | 12:30 – 2:00 PM   | 10:00 – 11:00 AM   | 12:30 – 2:00 PM   |           |
+| 12:30 – 1:00 PM    |                   | 12:30 – 2:00 PM    |                   |           |
 
 
 
@@ -67,6 +73,14 @@ We will divide collection approximately to the schedules below. Because visiting
 
 ## Task Two
 
+After our team completed the pilot collection, we felt as though some attributes were easier to collect than others. For instance, the weather observation and total chairs and tables were able to be converted fairly quickly within our dataset by counting all the tables and chairs in each section once and checking the weather app. One aspect of our data collection that was more difficult was the number of tables used, as different students may either be sitting alone at one table or sitting in a group, which made us manually check each table at a given time to make sure that our data was accurate.
+
+Different group members interpreted data differently because they went at different times throughout the day, which caused different results to appear for the weather and the number of tables used per location. There were no important attributes missing within any observation, as all locations were open throughout building hours, which allowed us to collect data seamlessly without any issues. One unnecessary aspect was our available chair count, as our chair occupancy rate already provided the ratio between the chairs used compared to the total number of chairs. The only reason we kept this there was due to Excel formatting for dividing the two rows together per column, but this was unnecessary. 
+
+The pilot did change the types of questions we answered, as it made us focus more on how specific weather patterns and times of day fluctuate student activities, rather than simply just the day of the week. We also diverted from our original hypothesis of seeing if students would rather be in groups or by themselves throughout the day, as we felt as though it was too small of an idea to capture throughout many different study areas, and we were able to collect more unique data to provide a more genuine problem to solve.
+
+During our pilot run, our team mainly focused on the morning time on Monday, September 28th. After our pilot run, we decided to run 3 separate times throughout the week for morning, midday, and afternoon. This made sure that we would be able to see the patterns between student activity more clearly. We also assigned each team member a specific time to make sure that schedules wouldn’t cause us to miss our collection sections. Lastly, we revised the process of data collection so each team member would write the time and location on the Google Sheet each time to avoid errors or missing data.
+	
 ## Task Three
 
 ## Task Four
