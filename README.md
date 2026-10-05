@@ -18,8 +18,6 @@ For booth seating, we will use visible seat divisions or seams to determine capa
 
 Tables with people or personal belongings will count as occupied. Each backpack on an otherwise unoccupied seat or at an unoccupied place at a table will count as one occupied seat. A backpack belonging to someone already counted will not add another occupied seat. These counts represent places that appear taken, rather than an exact count of people present.
 
-Example images will illustrate which tables and seats are included or excluded from our observations.
-
 ### Collection Method
 
 We will collect data through in-person visits to each study area, recording the total, occupied, and available tables and seats. Before repeated collection begins, we will establish baseline table and seating counts for each area using the definitions above.
@@ -53,12 +51,12 @@ We will divide collection approximately to the schedules below. Because visiting
 
 
 
-### Collection Table
+### Sample Collection Table
 
 | Attribute          | Type          | Description                               | Example              |
 | ------------------ | ------------- | ----------------------------------------  | -------------------- |
 | `visit_id`         | Identifier    | Unique ID for each location visit         | `001`                |
-| `location`         | Categorical   | Building and specific study area          | `Library, second-floor` |
+| `location`         | Categorical   | Building and specific study area          | `West Terrace` |
 | `date`             | Temporal      | Date of observation                       | `2026-09-24`         |
 | `time`             | Temporal      | Time of observation                       | `14:35`              |
 | `semester_week`    | Temporal      | Week within the 16-week semester          | `5`                  |
