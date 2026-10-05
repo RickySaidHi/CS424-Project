@@ -119,6 +119,8 @@ When we first wrote our questions, almost every one came down to "compare occupa
 
 ## Task Five
 
+### Ramon's Sketches
+
 ![alt text](<visualizations/Ramon/CS 424 Task 5 Sketch Ramon_1.jpeg>)
 
 This first sketch (Q1) was motivated by our pilot testing, which showed that morning counts were lower than midday counts. The domain question being asked here is whether occupancy changes throughout the day. Our abstract task here is to discover the trend in occupancy across the ordered times of day. The attributes are study lounge location (categorical), time of day (ordinal), and mean chair occupancy percentage (quantitative). We used a heatmap, where the marks are area marks, one cell for each lounge and time block. For channels, vertical position is the location and horizontal position is the time of day, with the density of the markings showing the occupancy level (blank, dots, lines). What worked well was that the busiest cells stand out using the different markings for each percentage bracket. What didn’t work well within this graph was that it summarized the times into 3 different sections rather than many different sections to show a more cohesive increase, but the graph still points out the conclusion that midday times contain a greater increase in chair and table usage. This sketch is different because it's the only graph that has location and time together. It is also the only one that uses marking density instead of position or length to show occupancy. 
@@ -132,6 +134,8 @@ The second sketch (Q2) here was motivated by our drop in the West Terrace, which
 The third sketch (Q3) here was motivated by our method of data collection, as our data covers a range of temperatures between 59-75°F, so we wanted to see if the temperature changes where students would study. The domain question being asked here is whether there is a temperature boundary where more students study indoors. The abstract task here is to locate the temperature at which these occupancy patterns shift. The attributes were the temperature range (ordinal), space type (categorical), and the mean chair occupancy percentage (quantitative). The marks here were the bars, and the channels were the bar height for mean occupancy, the horizontal position for temperature range, and the shape for indoor(triangle) vs. outdoor (square). What worked well with this graph was that it was visually simple to see the difference in occupancy between indoor and outdoor per temperature range. There is also a closer threshold at around the 71-75°F range, where both areas contain similar amounts of usage. What didn’t work as well was that the graph shows a wide range for temperature and not the exact degree at which the equalization happens (such as collecting data for every degree). The confusing part about this graph is that every observation within the 71-75°F range was also at midday, when more students are within these study areas as well. What differs from the other graphs is that this is the only bar chart that groups temperature into ranges and groups into indoor vs. outdoor.
 
 ---
+
+### Ricky's Sketches
 
 ![alt text](<visualizations/Ricky/Sketch01CS424.jpg>)
 
@@ -147,6 +151,8 @@ The third sketch (Q4) compares average table and chair occupancy across the seve
 
 ---
 
+### Jake's Sketches
+
 ![alt text](<visualizations/Jake/IMG_7005.png>)
 
 This first sketch (Q1) is a clock face, motivated by the limitation of our heatmap, which grouped time into only three blocks. It addresses the domain question of whether occupancy changes throughout the day, with the abstract task of discovering the trend in occupancy across time. The attributes are time of observation (quantitative), chair occupancy percentage (quantitative), and location (categorical). The marks are points, one for each of our 73 observations, and the channels are angle for time, distance from the center for occupancy, and shape for location. What worked well is that every observation sits at its actual time, so the midday cluster sitting much farther from the center makes the morning to midday increase easy to see. What didn't work as well is that the morning observations crowd near the center since their occupancy is low, which makes the location shapes hard to tell apart there. Radial distance is also harder to judge than a regular vertical axis, and the dots form clusters around our collection windows, so the gaps between them don't show whether occupancy rises gradually or jumps suddenly. This sketch differs from the others because it's the only radial layout and the only one showing every observation at its exact time across all locations.
@@ -159,6 +165,17 @@ The second sketch (Q4) is a floor map of Student Center East, motivated by the i
 
 The third sketch (Q3) combines bars and a line, motivated by a problem we found in our temperature bar chart, where every observation in the 71 to 75°F range was also at midday, so we couldn't tell whether temperature or time of day was driving occupancy. It addresses the domain question of whether there's a temperature boundary where more students study indoors, and also touches on Q1 and Q2, with the abstract task of identifying whether occupancy follows temperature or time of day. The attributes are collection session (ordinal), mean chair occupancy percentage (quantitative), temperature (quantitative), and weather (categorical). The marks are bars, points connected by a line, and weather icons, and the channels are horizontal position for session, bar height for occupancy, vertical position on a second axis for temperature, and icon shape for weather. What worked well is that the two tallest bars, Tuesday midday (58.6%) and Thursday midday (53.8%), were also the two warmest sessions at 75°F and 72°F, while Friday midday stayed low at 29.8% when it was only 64°F. Thursday midday was rainy and still busy, which suggests rain pushes students indoors rather than keeping them away. What didn't work as well is that dual axes can be misleading, since how well the bars and line seem to match depends on how the two axes are scaled. Also left out Wednesday midday because it was only one observation, and with only one week of data, each type of session only happens once or twice. This sketch differs from the others because it's the only one using two axes, and the only one that puts temperature, time of day, and weather together in the order they happened.
 
+---
+
+### Refined Sketches
+
+![alt text](<visualizations/Refined/Refined_Sketch_One.jpg>)
+
+The first refined sketch (Q4) develops the original bar chart comparing average table and chair occupancy at each location. It addresses which study areas offer greater availability, with the abstract tasks of comparing locations and identifying differences between two occupancy measures. The attributes are location (categorical), occupancy type (categorical), and mean occupancy percentage (quantitative). The marks are bars, with horizontal position identifying location and bar height representing occupancy. Compared with the outlined version, the refinement introduces a different color for each location and uses darker shades for table occupancy and lighter shades for chair occupancy. It retains the numerical labels and dashed connectors showing the percentage-point gaps. We expect viewers to identify locations with greater average availability and recognize where table occupancy substantially exceeds chair occupancy.
+
+![alt text](<visualizations/Refined/Refined_Sketch_Two.jpg>)
+
+The second refined sketch (Q1) develops the original patterned heatmap showing chair occupancy by location and time of day. It addresses whether occupancy changes throughout the day, with the abstract tasks of identifying temporal patterns and comparing those patterns across locations. The attributes are study lounge location (categorical), time of day (ordinal), and mean chair occupancy percentage (quantitative). The marks are rectangular cells, with vertical position representing location and horizontal position representing morning, midday, and afternoon. Compared with the outlined version’s blank spaces, the refinement uses shades of blue to represent occupancy brackets. We expect viewers to identify each location’s busiest observation period and determine whether similar daily occupancy patterns occur across the seven lounges.
 
 ## Task Six
 
