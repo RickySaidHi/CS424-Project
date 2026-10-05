@@ -18,6 +18,18 @@ For booth seating, we will use visible seat divisions or seams to determine capa
 
 Tables with people or personal belongings will count as occupied. Each backpack on an otherwise unoccupied seat or at an unoccupied place at a table will count as one occupied seat. A backpack belonging to someone already counted will not add another occupied seat. These counts represent places that appear taken, rather than an exact count of people present.
 
+### Initial Domain Questions
+
+We started with these five domain questions before collecting any data, with Task 3 describing how they changed specifically.
+
+1. Which SCE study lounges are most likely to have open seats, and which are usually full?
+
+2. Does seat availability change throughout the week?
+
+3. Do students study alone or in groups, and does that change over the day?
+
+4. Does weather affect how many students use the study lounges?
+
 ### Collection Method
 
 We will collect data through in-person visits to each study area, recording the total, occupied, and available tables and seats. Before repeated collection begins, we will establish baseline table and seating counts for each area using the definitions above.
@@ -48,8 +60,6 @@ We will divide collection approximately to the schedules below. Because visiting
 | ------------------ | ----------------- | ------------------ | ----------------- | --------- |
 | 10:00 – 11:00 AM   | 12:30 – 2:00 PM   | 10:00 – 11:00 AM   | 12:30 – 2:00 PM   |           |
 | 12:30 – 1:00 PM    |                   | 12:30 – 2:00 PM    |                   |           |
-
-
 
 ### Sample Collection Table
 
@@ -104,15 +114,17 @@ During our pilot run, our team mainly focused on the morning time on Monday, Sep
 	
 ## Task Three
 
-We collected 73 observations of study space availability between seven study lounges throughout the UIC Student Center East Building during week 6 of the semester. Each observation included the time of the observation, location, and the number of tables and chairs used compared with the total. We also captured temporal data regarding the time of day and weather conditions. Our spatial coverage includes the seven lounges, with 17 variables per observation, which are in Data_Collection.csv.
+Task3: 
 
-Our data collection revealed that chair occupancy rates differed by time of day and weather conditions. For instance, chair occupancy rates ranged from 3.13% to 77.78%, with morning times showing lower occupancy rates compared to midday periods, where they were almost full. Weather conditions also showed large discrepancies, with rain being at around 52% on average, sunny at 38%, and cloudy at 10%. Different locations, such as the west terrace, also had much lower occupancy rates during rain, even with cover, at 1.56% compared to 62.5% during sunny weather.
+We collected 73 observations of study space availability between seven different study lounges throughout the UIC Student Center East Building during week 6 of the semester. Each observation included the time of the observation, location, and the number of tables and chairs used compared with the total. Each group member was assigned time slots to count the number of tables and chairs in all seven locations and enter the data in a shared Google Sheet. We also captured temporal data regarding the time of day and weather conditions. Our spatial coverage includes the seven lounges, with 17 variables per observation, which are in Data_Collection.csv.
+
+Our data collection revealed that chair occupancy rates differed immensely depending on the time of day and weather conditions. For instance, chair occupancy rates ranged from 1.56% to 88.89%, with morning times showing lower occupancy rates compared to midday periods, which averaged 49% compared with 22% in the morning. Weather conditions also showed large discrepancies, with rain being at around 33% on average, sunny at 37%, and cloudy at 27%. Different locations, such as the west terrace, also had much lower occupancy rates during rain, even with cover, at 1.56% compared to 62.5% during sunny weather.
 
 Some constraints we had were that our data only captured one week within this semester and not on weekends due to our team not being on campus. We also weren’t able to capture every location at the exact minute because we had to count the number of open chairs and tables, so our observations looked over a section of time rather than exactly on the hour.
 
-For data collection, we focused on seats positioned at study tables and excluded seats and corner areas without tables. We also ignored data regarding student count, as students could also be entering a study lounge to talk with a friend or get food rather than studying, which would disrupt our data accuracy. 
+For data collection, we focused on collecting seats positioned at study tables and excluding seats and corner areas without tables. We also ignored data regarding student count, as students could also be entering a study lounge to talk with a friend or get food rather than studying, which would disrupt our data accuracy. Lastly, since a pass through each location and counting the number of chairs took time, the first and last locations were counted at different times. There could also be slight bias in the data, as it’s hard to perfectly count the exact number of open chairs when one or a few students could also be entering and sitting down while you are counting.
 
-One domain question our team would like to investigate is whether occupancy changes throughout the day. We chose this question because our data shows a consistent trend with morning observations lower than midday observations, ranging from 3.13% to 61.11%. Our second domain question is whether weather affects the occupancy of students in different types of spaces. This question works with our data because outdoor spaces such as the west terrace drop significantly in total chair use count from 62% in the sun to 1.56% in the rain. This could mean that the space itself is not protective against the rain, or that students just avoid outdoor spaces in general. Our third domain question would be whether there is a specific temperature boundary where more students study indoors. This is also a great question because our data collects weather from between 59℉ and 75℉, and other study areas can anticipate incoming students if our data predicts a sudden increase in table usage. Our fourth domain question is whether spaces are most open throughout the day depending on location. This question works within our dataset because we noticed that some locations, such as the Commuter Center, showed far greater usage compared to the inner circle, which shows that some areas are more popular for studying or possibly used differently compared to other study lounges, such as for events.
+One domain question our team would like to investigate is whether occupancy changes throughout the day. We chose this question because our data shows a consistent trend, with morning observations lower than midday observations, averaging 22% in the morning and 49% at midday. Our second domain question is whether weather affects the occupancy of students in different types of spaces. This question works with our data because outdoor spaces such as the west terrace drop significantly in total chair use count from 62% in the sun to 1.56% in the rain. This could mean that the space itself is not protective against the rain, or that students just avoid outdoor spaces in general. Our third domain question would be whether there is a specific temperature boundary where more students study indoors. This is also a great question because our data collects weather from between 59℉ and 75℉, but every reading in the 70s came at midday, so we need to separate temperature from time of day. Our fourth domain question is whether spaces are most open throughout the day depending on location. This question works within our dataset because we noticed that some locations, such as the Commuter Center, showed far greater usage compared to the inner circle, which shows that some areas are more popular for studying or possibly used differently compared to other study lounges, such as for events.
 
 ## Task Four
 
