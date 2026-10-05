@@ -6,7 +6,7 @@
 
 For our project, we will observe study space availability in UIC’s Student Center East (SCE). Our collection will focus on seven areas identified on UIC’s website as designated study lounges: the first-floor Circle Lounge, Montgomery Lounge, Pier Room, East Terrace, West Terrace, Inner Circle, and the Commuter Center.
 
-We will compare table and seat availability across these areas at different times and on different days. By recording factors such as weather and semester week, we also hope to explore conditions associated with changes in availability. Our goal is to understand when and where students are most likely to find an available place to study.
+Our initial domain question is: How does study-space availability vary across the seven lounges in Student Center East? To find this out we will compare table and seat availability across these areas at different times and on different days. By recording factors such as weather and semester week, we also hope to explore conditions associated with changes in availability. Our goal is to understand when and where students are most likely to find an available place to study.
 
 ### Observation Definitions
 
@@ -68,6 +68,29 @@ We will divide collection approximately to the schedules below. Because visiting
 | `available_chairs` | Quantitative  | Total chairs minus occupied               | `15`                 |
 | `occupied_tables`  | Quantitative  | Tables with people                        | `5`                  |
 | `available_tables` | Quantitative  | Total tables minus occupied               | `5`                  |
+
+### Final Revised Data Dictionary
+
+| Attribute | Type | Description | Example |
+| --- | --- | --- | --- |
+| `visit_id` | Identifier | Unique ID for each location visit | `7` |
+| `location` | Categorical | Study area observed | `commuter_center` |
+| `date` | Temporal | Date of observation | `9/28/2026` |
+| `day` | Categorical | Day of the week | `Monday` |
+| `time` | Temporal | Recorded local observation time | `17:20` |
+| `time_of_day` | Ordinal | Observation period: Morning, Midday, or Afternoon | `Afternoon` |
+| `semester_week` | Ordinal | Week within the 16-week semester | `6` |
+| `temperature` | Quantitative | Outdoor temperature in degrees Fahrenheit | `66` |
+| `temp_bucket` | Ordinal | Lower bound of the 10°F temperature interval; 60 represents 60–69°F | `60` |
+| `weather` | Categorical | Recorded weather condition: Sunny, Rain, or Cloudy | `Sunny` |
+| `total_chairs` | Quantitative | Total eligible study seats in the observation area | `54` |
+| `total_tables` | Quantitative | Total eligible study tables in the observation area | `23` |
+| `occupied_chairs` | Quantitative | Seats counted as taken by people or belongings | `37` |
+| `available_chairs` | Quantitative | Total chairs minus occupied chairs | `17` |
+| `chair_occupancy_rate` | Quantitative | Occupied chairs divided by total chairs, expressed as a percentage | `68.52%` |
+| `occupied_tables` | Quantitative | Tables with people or belongings, counted once per table | `23` |
+| `available_tables` | Quantitative | Total tables minus occupied tables | `0` |
+| `table_occupancy_rate` | Quantitative | Occupied tables divided by total tables, expressed as a percentage | `100.00%` |
 
 ## Task Two
 
@@ -178,5 +201,15 @@ The first refined sketch (Q4) develops the original bar chart comparing average 
 The second refined sketch (Q1) develops the original patterned heatmap showing chair occupancy by location and time of day. It addresses whether occupancy changes throughout the day, with the abstract tasks of identifying temporal patterns and comparing those patterns across locations. The attributes are study lounge location (categorical), time of day (ordinal), and mean chair occupancy percentage (quantitative). The marks are rectangular cells, with vertical position representing location and horizontal position representing morning, midday, and afternoon. Compared with the outlined version’s blank spaces, the refinement uses shades of blue to represent occupancy brackets. We expect viewers to identify each location’s busiest observation period and determine whether similar daily occupancy patterns occur across the seven lounges.
 
 ## Task Six
+
+Our sketches explored bars, lines, points, a heatmap, a clock, and a floor map. Bar charts and point comparisons made percentages easy to compare. The clock and floor map offered more unusual ways to show time and location, but radial distances and circle sizes were harder to read accurately.
+
+For Question 1, the weekday line graph showed changes across the week, but it did not directly show how occupancy changed throughout a day. The clock showed exact observation times but became crowded where points overlapped. We chose to refine the heatmap because it made morning, midday, and afternoon patterns easier to compare across all seven locations. Its main limitation was grouping observations into three periods, which could potentially hide changes within those periods.
+
+For Questions 2 and 3, the weather comparison clearly showed differences between sunny and rainy observations, while the temperature bars compared indoor and outdoor spaces. Grouping temperatures made the chart simpler but hid individual differences. The scatterplot kept those differences visible but covered only West Terrace. Though, we could expand it into an interactive visualization where users click an observation to see details such as its date, time, weather, and chair and table counts. The combined chart included weather, temperature, and time, although its two axes made it harder to interpret. So far, we have not confirmed a temperature threshold or established whether students moved indoors.
+
+For Question 4, the location bar chart clearly compared table and chair occupancy, while the floor map added seating capacity and physical location. We refined the bar chart because it made the gaps between table and chair occupancy easy to see at each location. Color helps distinguish the bars, while labels show the percentages. More locations would make this chart crowded, whereas the heatmap could grow by adding rows.
+
+Our data covers only one week, with uneven collection times and weather conditions. This limits the comparisons, especially because warmer observations often occurred at midday. Collecting at consistent times over more weeks would help. Exploring different layouts showed us what averages leave out. We are also looking foward to collecting data during weeks like midterms and campus events to explore conditions our first week may have missed.
 
 ## Task Seven
