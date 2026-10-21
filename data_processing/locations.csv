@@ -1,0 +1,8 @@
+location,location_label,space_type,total_chairs,total_tables,notes
+first_floor_circle_lounge,First Floor Circle Lounge,indoor,182,32,Baseline count from study_space_data.xlsx
+montgomery_lounge,Montgomery Lounge,indoor,72,10,Baseline count from study_space_data.xlsx; large shared tables (7.2 chairs per table)
+pier_room,Pier Room,indoor,116,26,Baseline count from study_space_data.xlsx
+east_terrace,East Terrace,outdoor,78,26,Baseline count from study_space_data.xlsx; classified as outdoor (terrace) to match the team's Q2/Q3 sketches
+west_terrace,West Terrace,outdoor,128,37,Baseline count from study_space_data.xlsx; covered terrace; classified as outdoor to match the team's Q2/Q3 sketches
+inner_circle,Inner Circle,indoor,282,70,Baseline count from study_space_data.xlsx
+commuter_center,Commuter Center,indoor,54,23,Baseline count from study_space_data.xlsx; closes around 6 PM
