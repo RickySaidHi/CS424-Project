@@ -258,7 +258,12 @@ Some limits within our data are that we only collected on weekdays between about
 
 ## Task Two
 
-We prepared our data using  pandas to turn our spreadsheet into the files for our visualizations. We also made a jupyter notebook to go through each step of the script and show what the data looks like.
+We prepared our data using pandas to turn our spreadsheet into files for our visualizations. Running the command python prepare_data.py shows our new cleaned data and the different summary tables per question.
 
-We split our repository three different folders. "raw" holds the original exports from our Google Sheet, which includes the version before our manual fixes. "Reference" holds locations.csv, which lists each lounge's seat and table count and if its indoors or outdoors. Corrections.csv l;
+We then split our repository into 3 different sections. Our original data stays at the top of our project, with Updated_Dataset.csv being our Google Sheet, study_space_data.xlsx having our seat and table counts, and Data_Collection.csv having each attribute. The data_processing folder holds our script and the tables we made for our script. Locations.csv lists each lounge’s name and location, and fixes.csv lists any values that the script skips due to invalid or missing data. The processed_data folder also holds the cleaned data and the different tables that the script runs for our visualizations.
 
+When the script runs, it first leaves out the values listed in fixes.csv. Right now, this is only visit 5, which shows 37 occupied tables but only 14 occupied chairs. As of now, we plan to check over and see if we can find this missing piece of data. The script then recalculates every count and occupancy percentage from our counts instead of the spreadsheet because Google Sheets sometimes glitches out with our dataset and gives invalid percentages.
+
+We also made a summary table for each question and a chart showing how many visits we have for each day within coverage_grid.png. We also added new columns to the dataset to help answer more questions: whether each lounge is outdoors or indoors, a session ID to organize each group member’s visits to each location over time, and whether each visit had at least one open table. We also made a summary table for each question (q1_by_time_of_day, q2_rain_vs_sun, and q4_by_location) and a chart showing how many visits we have for each day and time of day (coverage_grid.png). We also added a summary for every new column and the summary tables we made in data_dictionary.md as well.
+
+We have no Monday midday visits and no Tuesday or Friday afternoon visits, so those times cannot be compared yet, which is why we plan to collect more midday and afternoon sessions as well.
