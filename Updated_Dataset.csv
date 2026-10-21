@@ -102,7 +102,7 @@ visit_id,location,date,day,time,time_of_day,semester_week,temperature,temp_bucke
 101,montgomery_lounge,10/7/2026,Wednesday,8:55,Morning,7,63,60,Sunny,72,10,21,51,29.17%,10,0,100.00%
 102,pier_room,10/7/2026,Wednesday,8:56,Morning,7,63,60,Sunny,116,26,26,90,22.41%,19,7,73.08%
 103,west_terrace,10/7/2026,Wednesday,8:57,Morning,7,63,60,Sunny,128,37,4,124,3.13%,4,33,10.81%
-104,commuter_center,10/7/2026,Wednesday,8:58,Morning,7,63,60,Sunny,54,23,52,230,96.30%,22,23,95.65%
+104,commuter_center,10/7/2026,Wednesday,8:58,Morning,7,63,60,Sunny,54,23,52,2,96.30%,22,1,95.65%
 105,inner_circle,10/7/2026,Wednesday,8:59,Morning,7,63,60,Sunny,282,70,20,262,7.09%,17,53,24.29%
 106,east_terrace,10/7/2026,Wednesday,9:00,Morning,7,63,60,Sunny,78,26,14,64,17.95%,10,16,38.46%
 107,inner_circle,10/7/2026,Wednesday,12:00,Midday,7,75,70,Sunny,282,70,158,124,56.03%,70,0,100.00%
@@ -162,3 +162,10 @@ visit_id,location,date,day,time,time_of_day,semester_week,temperature,temp_bucke
 161,commuter_center,10/20/2026,Tuesday,8:54,Morning,9,55,50,Cloudy,54,23,19,35,35.19%,14,9,60.87%
 162,inner_circle,10/20/2026,Tuesday,8:55,Morning,9,55,50,Cloudy,282,70,18,264,6.38%,14,56,20.00%
 163,east_terrace,10/20/2026,Tuesday,8:56,Morning,9,55,50,Cloudy,78,26,25,53,32.05%,16,10,61.54%
+164,first_floor_circle_lounge,10/21/2026,Wednesday,8:50,Morning,9,57,50,Sunny,182,32,6,176,3.30%,4,28,12.50%
+165,montgomery_lounge,10/21/2026,Wednesday,8:51,Morning,9,57,50,Sunny,72,10,11,61,15.28%,8,2,80.00%
+166,pier_room,10/21/2026,Wednesday,8:52,Morning,9,57,50,Sunny,116,26,26,90,22.41%,19,7,73.08%
+167,west_terrace,10/21/2026,Wednesday,8:53,Morning,9,57,50,Sunny,128,37,6,122,4.69%,4,33,10.81%
+168,commuter_center,10/21/2026,Wednesday,8:54,Morning,9,57,50,Sunny,54,23,15,39,27.78%,11,12,47.83%
+169,inner_circle,10/21/2026,Wednesday,8:55,Morning,9,57,50,Sunny,282,70,18,264,6.38%,18,52,25.71%
+170,east_terrace,10/21/2026,Wednesday,8:56,Morning,9,57,50,Sunny,78,26,13,65,16.67%,13,13,50.00%

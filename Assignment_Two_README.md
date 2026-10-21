@@ -19,3 +19,15 @@ Some inconsistencies we have found within our dataset are that in a few visits, 
 We fixed this by manually editing our spreadsheet and deleting duplicate visits, as well as rewriting any typos or broken formulas within our dataset. This included lines 81, 105, 116, and 143.
 
 Some limits within our data are that we only collected on weekdays between about 8 AM and 6 PM, and weeks 8 and 9 only have mornings so far. Going forward, we plan to collect more midday and afternoon walk-throughs, including at least one more rainy day.
+
+## Task Two
+
+## Task Three
+
+## Task Four
+
+## Task Five
+
+## Task Six
+
+## Task Seven
