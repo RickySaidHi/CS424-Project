@@ -1,22 +1,22 @@
 location_label,time_of_day,chair_occupancy_pct,table_occupancy_pct
 Commuter Center,Afternoon,57.78,81.74
 Commuter Center,Midday,83.07,98.14
-Commuter Center,Morning,41.17,61.87
+Commuter Center,Morning,40.21,60.87
 East Terrace,Afternoon,29.23,71.54
 East Terrace,Midday,61.75,92.95
-East Terrace,Morning,23.61,51.92
+East Terrace,Morning,23.08,51.78
 First Floor Circle Lounge,Afternoon,18.57,61.88
 First Floor Circle Lounge,Midday,30.31,79.69
-First Floor Circle Lounge,Morning,7.88,32.81
+First Floor Circle Lounge,Morning,7.52,31.25
 Inner Circle,Afternoon,21.06,52.57
 Inner Circle,Midday,38.18,81.9
-Inner Circle,Morning,9.28,26.31
+Inner Circle,Morning,9.06,26.26
 Montgomery Lounge,Afternoon,42.22,96.0
 Montgomery Lounge,Midday,50.93,93.33
-Montgomery Lounge,Morning,23.73,83.33
+Montgomery Lounge,Morning,23.08,83.08
 Pier Room,Afternoon,38.97,86.15
 Pier Room,Midday,51.29,94.23
-Pier Room,Morning,28.74,81.09
+Pier Room,Morning,28.25,80.47
 West Terrace,Afternoon,9.53,16.89
 West Terrace,Midday,36.46,73.87
-West Terrace,Morning,5.6,15.09
+West Terrace,Morning,5.53,14.76

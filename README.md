@@ -233,3 +233,32 @@ The way we split up data collection shaped what our data ended up looking like. 
 Our process also shaped our visualization designs. We brainstormed together in the group chat to make sure we each planned different visualizations, then each of us took on three sketches and sent pictures once we finished. Since we each sketched on our own first, we ended up with a lot of different approaches, which gave us more to compare and build from when we worked on Task 5 together. We split the written tasks in a similar way, with me taking Tasks 4 and 7, Ramon taking 2 and 3, Ricky taking 1 and 6, and all of us working on Task 5 together.
 
 We didn't run into any major challenges, but time was definitely the biggest one. Ricky and I are both commuters, so we aren't on campus later in the day, and neither of us has classes on Fridays. On the other hand, Ramon lives in the dorms, so he was able to cover times we couldn't. We also focused on daytime hours since the Commuter Center closes around 6pm, so our data doesn't capture evening use in the other spaces. That meant we had to be intentional about spreading our collection times out between the three of us so we could cover as much of the day as possible. Even so, our data stops around 6pm, so it doesn't capture how busy these spaces get in the evening, which is something we'll have to keep in mind when looking at how occupancy changes throughout the day. Looking back, our communication is really what made it work, since staying in constant contact made it easy to plan around each other's schedules.
+
+# CS 424 Assignment Two
+
+## Task One
+
+### Revisiting Data and Questions
+
+So far, we have added 90 rows to our data set, bringing our total to 163 observations across weeks 6 through 9. We included this data to see how the patterns we noticed within week 6 repeat throughout the semester.
+
+We still believe Questions 1 (does occupancy change throughout the day?), 2 (does weather affect occupancy in different types of spaces?), and 4 (are spaces more open at certain times depending on location?) are worth investigating. This is because our data showed that our occupancy averages were 20 percent in the morning, 51 percent at midday, and 31 percent in the afternoon, with every lounge being the busiest at midday. For question 4, we noticed that the Commuter Center was the busiest out of all of the other locations, with the Inner Circle and the West Terrace being the most open.
+
+We will rewrite question 2 as well to focus on when looking at specific areas around the Student Center East building, does rain affect occupancy just within outdoor spaces or both within outdoor and indoor spaces, rather than just weather in general. This is because we were comparing different times of day with weather conditions, so we just want to focus on weather conditions instead.
+
+We are also removing question 3 regarding whether there is a temperature boundary because almost every warm reading happened at midday, so we can’t visually separate temperature from time of day in this scenario.
+
+We also added a new question about whether students study alone or in groups because tables fill up faster than chairs. For instance, Montgomery Lounge averages 36% of its chairs but 90% of its tables.
+
+Some inconsistencies we have found within our dataset are that in a few visits, the counts were off, such as there being more occupied tables than chairs. The commuter center was also accidentally counted twice in a few instances within our dataset. There were also a few typos in some instances where there were 27 occupied tables, but instead there were only 7 occupied tables from our initial data collection. Lastly, we noticed a visit recorded with 27 occupied tables that should have been 7, a #REF! error, and 230 available chairs in a 54-chair room.
+
+We fixed this by manually editing our spreadsheet and deleting duplicate visits, as well as rewriting any typos or broken formulas within our dataset. This included lines 81, 105, 116, and 143.
+
+Some limits within our data are that we only collected on weekdays between about 8 AM and 6 PM, and weeks 8 and 9 only have mornings so far. Going forward, we plan to collect more midday and afternoon walk-throughs, including at least one more rainy day.
+
+## Task Two
+
+We prepared our data using  pandas to turn our spreadsheet into the files for our visualizations. We also made a jupyter notebook to go through each step of the script and show what the data looks like.
+
+We split our repository three different folders. "raw" holds the original exports from our Google Sheet, which includes the version before our manual fixes. "Reference" holds locations.csv, which lists each lounge's seat and table count and if its indoors or outdoors. Corrections.csv l;
+

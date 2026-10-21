@@ -1,8 +1,8 @@
 location_label,chair_occupancy_pct,table_occupancy_pct,available_chairs,has_open_table,people_per_table
-West Terrace,14.5,31.45,109.43,0.95,1.55
-First Floor Circle Lounge,16.05,51.36,152.78,0.87,1.63
-Inner Circle,19.38,46.52,227.35,0.96,1.56
-East Terrace,34.78,66.89,50.87,0.87,1.51
-Montgomery Lounge,34.84,88.7,46.91,0.35,2.83
-Pier Room,36.84,85.62,73.26,0.83,1.91
-Commuter Center,56.22,76.0,23.64,0.72,1.69
+West Terrace,14.1,30.55,109.96,0.96,1.55
+First Floor Circle Lounge,15.52,49.74,153.75,0.88,1.63
+Inner Circle,18.84,45.65,228.88,0.96,1.54
+East Terrace,34.03,66.19,51.46,0.88,1.49
+Montgomery Lounge,34.03,88.33,47.5,0.38,2.77
+Pier Room,36.24,85.1,73.96,0.83,1.89
+Commuter Center,55.13,74.92,24.23,0.73,1.68
