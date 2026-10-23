@@ -267,3 +267,53 @@ When the script runs, it first leaves out the values listed in fixes.csv. Right 
 We also made a summary table for each question and a chart showing how many visits we have for each day within coverage_grid.png. We also added new columns to the dataset to help answer more questions: whether each lounge is outdoors or indoors, a session ID to organize each group member’s visits to each location over time, and whether each visit had at least one open table. We also made a summary table for each question (q1_by_time_of_day, q2_rain_vs_sun, and q4_by_location) and a chart showing how many visits we have for each day and time of day (coverage_grid.png). We also added a summary for every new column and the summary tables we made in data_dictionary.md as well.
 
 We have no Monday midday visits and no Tuesday or Friday afternoon visits, so those times cannot be compared yet, which is why we plan to collect more midday and afternoon sessions as well.
+
+![alt text](visualizations/coverage_grid.png)
+
+## Task Three
+
+### Moving Our Visualizations into a Notebook
+
+After preparing the data in Task Two, we moved our scripts to a Jupyter notebook to make it easier to access and create our visualizations in separate cells. We originally created our visualizations in Matplotlib and later converted them to Vega-Lite using Altair with our pandas data. Instructions for running the notebook are provided in the ipynb file. Our visuals focused on addressing our questions about time, weather, location, and the difference between table and chair occupancy.
+
+### Chair Occupancy Throughout the Day
+
+![alt text](visualizations/Refined/ChairOccupancy_Linechart.png)
+
+To address our first question, we compared average chair occupancy across the different time periods for each location using a line chart. The trends show a consistent peak during midday and the lowest occupancy in the morning. Another thing to note is the difference in percentages across locations. The Commuter Center had the highest averages by far, showing a major contrast with the First Floor Circle Lounge, which consistently showed the lowest averages. One drawback of this visual is that it aggregates the data and could hide variation between collection visits.
+
+### Weather and Outdoor Study-Space Use
+
+![alt text](visualizations/Refined/West_Terrace_BarChart.png)
+
+For this visual, we wanted to understand the difference weather could make in outdoor study spaces like West Terrace. By comparing sunny and rainy mornings, we saw that the variation between the two did not make much of a difference. Other factors, such as temperature, could possibly play a bigger role as outdoor temperatures decrease over the semester.
+
+### Comparing Table and Chair Occupancy
+
+![alt text](visualizations/Refined/TableChairs_Scatterplot.png)
+
+For this visual, we plotted chair occupancy against table occupancy for individual visits to Montgomery Lounge. This gave us a better idea of the relationship between the two measures. Whether chair occupancy was low or high, tables could still be taken. This points to how the structure of some rooms, especially Montgomery Lounge, may affect how chairs fill up around different-sized tables. In this example, Montgomery Lounge has eight large tables that can fit many people during peak hours, but a table may sometimes be occupied by only one or two people, with others choosing not to join them. This visual could be expanded to let users select any of the study areas for comparison.
+
+### Empty Tables Throughout the Day
+
+![alt text](visualizations/Refined/EmptyTables_Linechart.png)
+
+For our location-availability question, we compared the average number of empty tables throughout the day across the study spaces. Inner Circle had many more tables available across all three time periods. Since Inner Circle can hold the most people and has the most total tables, this helps explain the pattern. This visual also supports our earlier analysis of Montgomery Lounge, where tables seem consistently taken throughout the day, regardless of time, and the total number of tables is limited.
+
+### How Often Was an Open Table Available?
+
+![alt text](visualizations/Refined/AvailableTables_Barchart.png)
+
+Using our prepared data, we also compared how often at least one table was available at different times and locations. The contrast between Inner Circle and Montgomery Lounge supports what we noticed in the other visuals. Inner Circle had an open table during most observed visits, while an open table was harder to find at Montgomery Lounge regardless of the time period. Another interesting difference was at the Commuter Center, where the drop in open-table availability from morning to midday was much larger than at many of the other study areas.
+
+### What We Learned and Next Steps
+
+Working through these visualizations in separate cells helped us understand why one average could not address our domain as a whole. Comparing the visuals gave us a better understanding of how study-space use differs across locations and times. We also plan to address gaps in our collection by gathering more observations during underrepresented periods and examining how those gaps have affected our comparisons. We see these visualizations as a stepping stone toward creating a more complete visual analytics system.
+
+## Task Four
+
+## Task Five 
+
+## Task Six 
+
+## Task Seven 
