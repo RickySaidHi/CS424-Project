@@ -312,6 +312,32 @@ Working through these visualizations in separate cells helped us understand why 
 
 ## Task Four
 
+We explored three visualization directions based on our Assignment One sketches and the findings from Task Three. The bar chart compares overall occupancy across locations, the heatmap shows patterns by location and time of day, and the scatterplots show individual collection visits. Each direction offers a different level of detail, helping us consider what to keep, modify, or combine as we continue developing our visualizations.
+
+### Table and Chair Occupancy by Location
+
+![alt text](visualizations/Refined/AverageChair_BarChart.png)
+
+For the first chart, we decided to continue using one of our refined sketches from Assignment One, which supports our questions about availability across locations and tables filling faster than chairs. The visualization uses location, occupancy type, and occupancy percentages for both types. We may further develop this visualization by implementing whiskers on each bar to better show variability between individual collection visits. We could also look into adding more information through another visual channel.
+
+We tried this approach because it combined several of our other visuals into one while maintaining a clear representation of the data. We plan to continue exploring this direction by adding relevant detail that allows users to gain more insight during analysis.
+
+### Chair Occupancy by Location and Time
+
+![alt text](visualizations/Refined/AverageChair_HeatMap.png)
+
+This heatmap develops our second refined sketch and supports our questions about how occupancy differs throughout the day and which locations remain more available. It uses location, time of day, and average chair occupancy percentage. The marks are rectangular cells. Horizontal position represents time of day, vertical position represents location, and color intensity represents occupancy percentage. Each cell also includes a percentage label.
+
+We adapted this visualization because it combines some of our simpler visuals into one and contrasts time periods and locations in a compact view. The colors make patterns easy to identify, while the labels show differences between values. One possible improvement would be a way to examine individual observations, since this visualization aggregates the data into averages. While it provides a broad view, linked views could allow users to explore more detail.
+
+### Table and Chair Occupancy Scatterplots
+
+![alt text](visualizations/Refined/TableChair_ManyScatterPlots.png)
+
+This visual supports our question about tables being taken while chairs are still available. It uses location, chair occupancy percentage, table occupancy percentage, and time of day. Each location has a separate scatterplot panel, and each point represents one collection visit. Horizontal position shows chair occupancy, vertical position shows table occupancy, and color identifies the time period. All panels use the same scales so locations can be compared directly.
+
+We used this approach to examine individual observations that our other visualizations summarize. We expanded the Montgomery Lounge scatterplot from Task Three to include the other locations, allowing the panels to reveal differences in the relationship between table and chair occupancy. However, overlapping marks can hide separate observations, and displaying many panels in one visual can make them harder to read. Overall, this approach provides a closer look at individual observations and how students may be using spaces, especially in relation to each area's layout. We could further develop this idea by linking the views together to make the presentation more concise.
+
 ## Task Five 
 
 ## Task Six 
