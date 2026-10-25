@@ -358,6 +358,39 @@ Lastly, we added a weather filter button that lets the user choose a specific co
 
 ![alt text](visualizations/Refined/visualization_five_cloudy.jpeg)
 
-## Task Six 
 
-## Task Seven 
+## Task Six
+
+We chose the linked heatmap and scatterplot from Task 5 as our strongest direction, since it's the only design that shows location and time of day together while still letting someone see the individual visits behind each average. After using it for a while, we found two problems with it and refined it twice.
+
+*Task 5 version, scatterplot in gray and heatmap set to Chairs taken*
+
+![Task 5 linked view with average chair occupancy heatmap and gray scatterplot of visits](visualizations/Refined/task_5_Visualization.jpeg)
+
+### Iteration One. Showing every visit in color from the start
+
+**Problem.** In the Task 5 version, every visit in the scatterplot was gray until someone clicked a heatmap cell. That meant the scatterplot said almost nothing on its own, and someone opening the page for the first time might not even realize they were supposed to click the heatmap. The gray also hid differences between lounges, since every point looked the same no matter where it came from.
+
+**Change.** We now show every visit with its own color for study area and its own shape for time of day from the start, with tooltips on every point. Clicking heatmap cells still works, but now the picked visits stay bright while the rest fade instead of turning gray, so they keep their colors. We also updated the subtitle to tell people to click the heatmap and that shift-clicking picks more than one cell.
+
+**Why.** This lets the scatterplot work both on its own and as a linked view. Right away you can see that the green Montgomery Lounge points sit far above the dashed line, while the purple Commuter Center points stay much closer to it. That means tables fill up faster than chairs much more at Montgomery, which supports our question about students spreading out instead of sharing tables. Keeping faded points in color also helps when cells are picked, since you can still tell which lounge the background points belong to. The tradeoff is that the chart is busier with every point colored, which is why we faded the unpicked points instead of keeping them all bright.
+
+*New version with a heatmap cell picked*
+
+![Scatterplot of every visit colored by study area and shaped by time of day, with picked cells highlighted](visualizations/Refined/task6_iteration1_scatter.png)
+
+### Iteration Two. Letting the heatmap show tables, not just chairs
+
+**Problem.** Our visualization's title asks where and when you can find an open seat, but the heatmap only showed chair occupancy. That made some lounges look a lot more open than they really are. Montgomery Lounge at midday showed 51 percent of chairs taken, which looks like half the seats are free, but the scatterplot showed most of its visits had almost every table taken. A student using the heatmap alone would end up walking to a lounge with nowhere to sit.
+
+**Change.** We added buttons that switch the heatmap between three measures. These are chairs taken, tables taken, and the percentage of visits where every table was taken. We set up the third measure as every table taken instead of having at least one open table, so all three go the same direction and darker always means harder to find a seat. We added that as a subtitle so the reader doesn't have to figure it out. The visit counts now only count visits with valid data for the chosen measure, which is why West Terrace in the afternoon shows 4 visits for tables but 5 for chairs.
+
+**Why.** Switching measures changes the answer to Question 4. On chairs, the Commuter Center looks like the hardest place to find a seat. On tables, Montgomery and Pier Room are just as full, with Montgomery at 83 to 96 percent of tables taken at every time of day. The every table taken view is the most useful for a student, since it directly shows how often you'd walk in and find nothing. Montgomery had every table taken in 54 percent of morning visits even though only 23 percent of its chairs were taken, while Inner Circle and West Terrace almost never filled up completely. Keeping the same color scale for all three measures means the same shade always means the same percentage, so switching between them is a fair comparison.
+
+*Heatmap set to Tables taken*
+
+![Heatmap showing average tables taken by study area and time of day](visualizations/Refined/task6_iteration2_tables.png)
+
+*Heatmap set to Visits with every table taken*
+
+![Heatmap showing the percentage of visits with every table taken by study area and time of day](visualizations/Refined/task6_iteration2_every_table.png)
