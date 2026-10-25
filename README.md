@@ -342,9 +342,21 @@ We used this approach to examine individual observations that our other visualiz
 
 Our heatmap only showed the averages, and the scatterplot was difficult to compare accurately across multiple charts showing each location, which made it hard for the reader to interpret the data properly. To fix this, we combined both visualizations to show a heatmap of average chair occupancy on the left and a scatterplot of every visit on the right, with weather buttons that filter between each condition.
 
+![alt text](visualizations/Refined/task_5_Visualization.png)
+
 We decided on linking these views together because the heatmap answers questions 1 and 4 regarding when and where occupancy changes throughout the Student Center East building, while the scatterplot answers the question about tables filling faster than chairs. By showing these visualizations together, the user can see how, in some instances, every table was taken even though there was only around half capacity, such as within the Montgomery Lounge at midday.
 
-We also added different forms of interaction within our new visualization. For instance, by hovering your mouse above a cell, you can see the exact average chair percentage and visits organized in a table with its respective location and time of day. You can also hover over each point in the scatterplot by first clicking a cell within the heatmap to see the date, temperature, weather, and the exact number of tables and chairs taken within each location and time of day chosen. Lastly, we added a weather filter button that lets the user choose a specific condition, and the heatmap updates to show whether it's sunny, rainy, or cloudy.
+We also added different forms of interaction within our new visualization. For instance, by hovering your mouse above a cell, you can see the exact average chair percentage and visits organized in a table with its respective location and time of day. 
+
+![alt text](visualizations/Refined/visualization_five_heatmap_hover.png)
+
+You can also hover over each point in the scatterplot by first clicking a cell within the heatmap to see the date, temperature, weather, and the exact number of tables and chairs taken within each location and time of day chosen.
+
+![alt text](visualizations/Refined/visualization_five_scatter_hover.png)
+
+Lastly, we added a weather filter button that lets the user choose a specific condition, and the heatmap updates to show whether it's sunny, rainy, or cloudy.
+
+![alt text](visualizations/Refined/visualization_five_cloudy.png)
 
 ## Task Six 
 
