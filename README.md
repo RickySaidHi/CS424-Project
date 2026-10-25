@@ -394,3 +394,31 @@ We chose the linked heatmap and scatterplot from Task 5 as our strongest directi
 *Heatmap set to Visits with every table taken*
 
 ![Heatmap showing the percentage of visits with every table taken by study area and time of day](visualizations/Refined/task6_iteration2_every_table.png)
+
+## Task Seven
+
+*Current design with the heatmap set to Chairs taken*
+
+![Current linked view with heatmap measure buttons, weather filter, and colored scatterplot of visits](visualizations/Refined/task7_current_design.png)
+
+The design we're continuing with is a heatmap of occupancy by study area and time of day, linked to a scatterplot of every individual visit. It's saved as an interactive page at `visualizations/Interactive/linked_views_v2.html` and can be rebuilt by running `visuals.ipynb` from top to bottom. The heatmap answers when and where seats are hardest to find, which covers Questions 1 and 4, and buttons switch it between chairs taken, tables taken, and visits with every table taken. The scatterplot shows the visits behind any cell someone clicks, with a dashed line marking where chair and table occupancy would be equal, which is how we look at our question about tables filling faster than chairs. A weather filter controls both views so indoor and outdoor lounges can be compared for Question 2.
+
+### How the design got here
+
+Our Assignment One heatmap used hand-drawn patterns for three chair occupancy brackets, and in Task 4 it was still a static chart sitting separately from seven small scatterplot panels. Since then, the biggest change hasn't been adding interaction, it's been changing what the visualization measures. We started out treating chair occupancy as the main measure because it was the first thing we counted, but a student looking for a place to study needs a table, not just a chair. That's why the heatmap now shows tables and full-table visits, and why all three measures go the same direction on one fixed color scale so darker always means harder to find a seat. The other big decision was keeping two views instead of building a dashboard. Every chart we cut, like the location bar chart and the time of day line charts, was already covered by the heatmap, so the scatterplot is the only second view that adds something new.
+
+### What the design taught us about our data
+
+Building the linked views changed what we think our project is actually about. We expected time of day to be the main story, and it does matter, since every lounge is busiest at midday. But switching the heatmap to tables showed that the real problem is how tables get used, not how many people show up. Montgomery Lounge had every table taken in 54 percent of morning visits even though only 23 percent of its chairs were taken, and the scatterplot shows its visits sitting far above the dashed line. Its tables are big, so one or two people can take a whole table and nobody else joins them. Inner Circle and West Terrace almost never filled up completely, which makes them the safest bets for a student. The design also made our collection gaps impossible to ignore. Every cell shows its visit count, and the "no visits" cells under the weather filter show exactly which combinations we never observed.
+
+### What we're still unsure about
+
+The rows are sorted by average chair occupancy, so when the heatmap switches to tables, the darkest rows are no longer at the bottom. A cell based on five visits is colored just as strongly as one based on thirteen, so the color may look more certain than the data is. The scatterplot is busy with every visit colored, especially along the top edge where points pile on top of each other. We're also unsure whether people will find the measure buttons and the click interaction on their own, since both are easy to miss.
+
+### Evaluation plan for Assignment Three
+
+For Assignment Three, we want to evaluate whether our visualization actually matches what happens in Student Center East. The plan is to use the visualization to make predictions and then go check them in person. Before each walkthrough, we'll look at the heatmap for that time of day and weather and write down what it says we should find, like Montgomery Lounge having every table taken at midday or Inner Circle having plenty of open tables in the morning. Then we'll go to those spots and count the chairs and tables the same way we did during collection, and compare what we see to what the visualization predicted. If the predictions hold up, that's good evidence our averages are trustworthy. If they don't, we'll look at whether the problem is in the data, like a cell based on only five visits, or in how the visualization presents it.
+
+This also lets us test the cells we're least sure about. Afternoon cells and anything filtered by rain are based on very few visits, so we'll focus some of our checks on those times to see whether the patterns still hold with more observations. Any new visits we collect along the way will also go back into the dataset and help fill the gaps the "no visits" cells show.
+
+We also want to ask friends who study in Student Center East what they think of the visualization. Since they already know these spaces, they can tell us whether the patterns match their own experience, like whether Montgomery really is that hard to get a table at or whether the Commuter Center feels as busy as it looks. We'll also pay attention to whether they understand the heatmap and the scatterplot without much explanation. Between checking the visualization against the real spaces and hearing from people who use them, we'll be able to tell whether our data and our design are telling an accurate story, and use that to refine the visualization.
