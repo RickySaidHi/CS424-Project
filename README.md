@@ -422,3 +422,45 @@ For Assignment Three, we want to evaluate whether our visualization actually mat
 This also lets us test the cells we're least sure about. Afternoon cells and anything filtered by rain are based on very few visits, so we'll focus some of our checks on those times to see whether the patterns still hold with more observations. Any new visits we collect along the way will also go back into the dataset and help fill the gaps the "no visits" cells show.
 
 We also want to ask friends who study in Student Center East what they think of the visualization. Since they already know these spaces, they can tell us whether the patterns match their own experience, like whether Montgomery really is that hard to get a table at or whether the Commuter Center feels as busy as it looks. We'll also pay attention to whether they understand the heatmap and the scatterplot without much explanation. Between checking the visualization against the real spaces and hearing from people who use them, we'll be able to tell whether our data and our design are telling an accurate story, and use that to refine the visualization.
+
+# CS 424 Assignment Three
+
+## Task 1
+
+### Which visualization we selected
+
+We selected the scatterplot of chair occupancy against table occupancy from our Assignment Two linked view. Each point is one visit, and the dashed line marks where chair and table occupancy would be equal, so points above the line are visits where tables filled up faster than chairs. We chose the scatterplot over the full linked view because it's the chart where interaction should matter most. Our heatmap is already easy to read without clicking, but the scatterplot has over 169 overlapping points across seven lounges, three times of day, and two weather groups. That clutter is exactly what filtering is meant to help with, so it makes for a more meaningful comparison. Using one chart also keeps the two versions as similar as possible, so any difference we measure comes from the interaction and not from other design changes.
+
+The scatterplot supports our question about tables filling faster than chairs, along with Question 1 about time of day and our rewritten Question 2 about rain. Both versions are built from the same cleaned dataset in `data_processing/visuals.ipynb`.
+
+### Static version
+
+*Static version*
+
+![Static scatterplot of chair occupancy against table occupancy for every visit, colored by study area, shaped by time of day, and filled or hollow by weather](visualizations/Assignment3/scatter_static.png)
+
+The static version shows every visit at once. Color shows the study area, shape shows the time of day, and filled points are visits without rain while hollow points are rainy visits. We added the filled and hollow encoding for this assignment so weather would be visible in the static version too. We first considered separate styles for sunny, cloudy, and rain, but a dashed outline looked almost the same as a hollow one at this size, so we grouped weather into rain and no rain, which also matches our rewritten Question 2. Since many visits had every table taken, points stack along the top of the chart, so we added a small fixed jitter of up to 1.5 percentage points so overlapping points don't completely hide each other. Each legend explains its encoding, so every visit's lounge, time of day, and weather can be identified without any interaction.
+
+### Interactive version
+
+*Interactive version with checkboxes below the chart*
+
+![Interactive scatterplot with checkboxes to show or hide each study area, time of day, and weather group](visualizations/Assignment3/task1_interactive.png)
+
+The interactive version is the exact same chart with twelve checkboxes underneath it, one for each lounge, each time of day, and rain and no rain. Unchecking a box removes those visits from the chart, so someone can narrow it down to something like Montgomery Lounge at midday without rain. A visit only shows up if its lounge, time of day, and weather group are all checked. The axes stay fixed from 0 to 100 so points never move when others disappear.
+
+We built it in Altair. Each checkbox is a parameter bound to a checkbox input, and one filter expression combines all twelve so the chart updates in the browser without rerunning any code. We chose checkboxes over clicking the legend because participants need to find and understand the controls quickly, and checkboxes are easier to notice. We chose removing points over fading them because fully removing them is true filtering and makes the remaining points much easier to read.
+
+### Keeping the comparison fair
+
+Both versions use the same data, the same jittered positions, the same encodings, and the same size, so the only difference is the checkboxes. Neither version has tooltips, since hovering would reveal exact values the static version can't show. We also hid the menu that lets people export the data or open the chart in an editor, so participants only have the controls we intend them to use. Every checkbox only removes visits that are already visible in the static version, so both versions contain exactly the same information.
+
+### Why we expect the interaction to help
+
+With the static version, answering something like "which lounge's tables fill up fastest compared to its chairs at midday" means picking out one color and one shape from over 160 points, many of them overlapping. With the interactive version, someone can uncheck everything except midday and two lounges, and only those visits are left. We expect this to make tasks that compare specific lounges, times, or weather conditions faster, since the user doesn't have to visually search through the clutter. We also expect it to help with accuracy when points overlap, since removing other visits makes the hidden ones easier to see.
+
+We don't expect the interaction to help with everything, though. For broad questions, like whether most visits sit above the dashed line, the static version already shows the overall pattern at a glance, and checkboxes could even slow people down if they feel like they need to use them. Twelve checkboxes is also a lot to figure out, so participants who aren't used to interactive charts might take longer at first.
+
+### Running the visualizations
+
+Both versions are saved as web pages in `visualizations/Assignment3`. To use them, download [scatter_static.html](visualizations/Assignment3/scatter_static.html) and [scatter_interactive.html](visualizations/Assignment3/scatter_interactive.html) and open them in a browser. To rebuild them, run `data_processing/visuals.ipynb` from top to bottom. During the study, participants will use both versions in the same browser on the same laptop so the testing environment stays consistent.
