@@ -485,12 +485,12 @@ This task asks participants to compare how much table occupancy exceeds chair oc
 
 **Variant A**
 
-1. Compare the table–chair occupancy gap for the First Floor Circle Lounge and Commuter Center during midday without rain. Which location has the larger gap?
+1. Compare the table-chair occupancy gap for the First Floor Circle Lounge and Commuter Center during midday without rain. Which location has the larger gap?
 2. For the selected location, estimate the average chair occupancy percentage during midday without rain.
 
 **Variant B**
 
-1. Compare the table–chair occupancy gap for the West Terrace and East Terrace during midday without rain. Which location has the larger gap?
+1. Compare the table-chair occupancy gap for the West Terrace and East Terrace during midday without rain. Which location has the larger gap?
 2. For the selected location, estimate the average chair occupancy percentage during midday without rain.
 
 The idea is that this task will support our question about tables being taken while chairs remain available. Users will need to compare both occupancy measures across multiple observations.
