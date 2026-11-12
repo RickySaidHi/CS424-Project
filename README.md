@@ -464,3 +464,79 @@ We don't expect the interaction to help with everything, though. For broad quest
 ### Running the visualizations
 
 Both versions are saved as web pages in `visualizations/Assignment3`. To use them, download [scatter_static.html](visualizations/Assignment3/scatter_static.html) and [scatter_interactive.html](visualizations/Assignment3/scatter_interactive.html) and open them in a browser. To rebuild them, run `data_processing/visuals.ipynb` from top to bottom. During the study, participants will use both versions in the same browser on the same laptop so the testing environment stays consistent.
+
+## Task 2
+
+### Evaluation Question and Hypothesis
+
+Our evaluation question consists of whether filtering our visualization by study area, time of day, and weather helps users compare table and chair occupancy more quickly and accurately than using a static visualization.
+
+We hypothesize that users will be able to complete the task questions much faster and make fewer errors when using the interactive version, as it can help remove unrelated observations that cause more noise.
+
+### Study Design
+
+We plan on having all users use both versions, with each user having four different questions to answer. Two of those questions will be answered with the static visualization and the other two using the interactive visualization.
+
+We plan on defining two analytical tasks, each with different variants. These variants will involve similar comparisons but use different locations or conditions to reduce memorization. Both versions will have the same dataset, charts, encodings, etc.
+
+### Analytical Task 1: Comparing Table and Chair Occupancy
+
+This task asks participants to compare how much table occupancy exceeds chair occupancy at two locations during midday without rain.
+
+**Variant A**
+
+1. Compare the table–chair occupancy gap for the First Floor Circle Lounge and Commuter Center during midday without rain. Which location has the larger gap?
+2. For the selected location, estimate the average chair occupancy percentage during midday without rain.
+
+**Variant B**
+
+1. Compare the table–chair occupancy gap for the West Terrace and East Terrace during midday without rain. Which location has the larger gap?
+2. For the selected location, estimate the average chair occupancy percentage during midday without rain.
+
+The idea is that this task will support our question about tables being taken while chairs remain available. Users will need to compare both occupancy measures across multiple observations.
+
+### Analytical Task 2: Comparing Changes Throughout the Day
+
+This task asks participants to compare the change in chair occupancy from morning to midday at two locations without rain.
+
+**Variant A**
+
+1. Compare the increase in typical chair occupancy from morning to midday for the West Terrace and Pier Room without rain. Which location has the larger increase?
+2. For the location you selected, estimate the average chair occupancy percentage during the morning without rain.
+
+**Variant B**
+
+1. Compare the increase in typical chair occupancy from morning to midday for the Inner Circle and Pier Room without rain. Which location has the larger increase?
+2. For the location you selected, estimate the average chair occupancy percentage during the morning without rain.
+
+The idea is that this task will support our question about how occupancy changes throughout the day. Users will compare two time periods at each location before choosing an answer.
+
+### Expected Answers and Accuracy
+
+Before testing, we ran a couple of tests to calculate the expected answers from the dataset. We plan on using these expected answers as a reference when looking at different participants’ scores and answers.
+
+When analyzing the answers, numerical and selection answers are going to be treated separately, especially considering that no external devices are allowed during testing, meaning answers could vary much more between users.
+
+The following are the expected answers for each of the questions and variants:
+
+* 1A - First Floor Circle Lounge; 34%
+* 1B - West Terrace; 35%
+* 2A - West Terrace; 6.5%
+* 2B - Inner Circle; 9.1%
+
+### Testing
+
+Moving forward with testing, we created a simple website that will allow participants to easily access the environment and allow their responses to each question to be properly logged. On accessing the website, they are prompted to enter their participant number, which will mix up the questions and variants to ensure balance during testing. We also make sure that users are familiar with the static and dynamic graphs before starting the timed questions.
+
+Upon starting each part, the website will load the assigned visualization and let the user start, which begins the timing. Participants will select a location and enter a numerical percentage based on the visualizations and submit the answers together. After each question, they will be prompted to rate how difficult the question was, as well as how difficult the visualization was to use, on a scale from 1 to 5.
+
+During testing, they will be monitored by one of us to ensure that no external devices or help are used. If there are any questions, we can help without giving any answers away.
+
+### Data Collection
+
+After the test is finished, the website prompts users to download their testing data into a CSV, which we will combine with the other results and analyze. The different variables collected within the CSV are:
+
+* Participant number, presentation order, visualization version, and question variant
+* Selected location and numerical estimate
+* Completion time in seconds
+* Question difficulty and visualization difficulty ratings
