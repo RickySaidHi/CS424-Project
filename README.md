@@ -540,3 +540,26 @@ After the test is finished, the website prompts users to download their testing 
 * Selected location and numerical estimate
 * Completion time in seconds
 * Question difficulty and visualization difficulty ratings
+
+## Task Four : Quantitative analysis
+
+Our data consisted of 15 participants, with 60 trials, 30 per version (static vs. non-interactive). Nine of the participants started with the static version, and six started with the interactive one. Our task accuracy in this case was whether the participant chose the right location and also verifying how far their chair occupancy estimates were from the range we collected within our dataset. Our completion time was the number of seconds that each participant spent per question.
+The guess error in this case is how far off a person’s chair occupancy guess was.
+
+Measure                      Static              Interactive
+
+Correct location chosen     18/30 (60%)         25/30 (83%)
+Guess error, median         11.3%               4.8%
+Guess error, average        21.4%               11.2%
+Time per question, median   70.6s               75.0s
+Time per question, range    25.3 - 323.6s       22.9 - 229.8s
+
+Our first visualization focuses on the accuracy between the two different types of charts, with red being static and green being interactive. We organized each question to show the positive differences between the two versions as well. We also showed the chair occupancy guess error alongside it to show both examples of inaccuracies and the differences between the static and interactive visualizations, with the blue triangles showing a negative correlation between each question.
+
+Our second visualization followed a similar format by demonstrating the completion times per trial, with each triangle illustrating a flat correlation between each person’s time. We also shared each person’s time for the first two compared to the last two questions to show the decrease as participants began to become more used to the formatting of the questions provided.
+
+Our data showed that the interactive version led to more correct location choices on every question in our simulation. The biggest difference was on question 1A, with 8 out of 8 participants who received this question receiving the correct range, while only 3 out of 7 participants who received the static version got it correct. The estimates were also closer with the interactive visualization, with the median error being 4.8% vs 11.3%, respectively.
+
+Overall, both charts were completed in roughly the same amount of time on average. We included the range of times as well, since users completed the interactive visualizations faster than the static visualizations due to the ease of access when selecting specific sections to see data differences more clearly.
+
+We expected the interactive chart to make people faster and more accurate compared to the static chart. In this case, the time per question remained the same because many users were learning how to use our interactive chart, which did take up time. As for accuracy, our original expectations were correct, as many participants picked the right location and guessed closer with our filtering options. To confirm our hypothesis, we would need to add more participants, as 15 participants can also lead to small biases.
