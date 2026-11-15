@@ -546,15 +546,13 @@ After the test is finished, the website prompts users to download their testing 
 Our data consisted of 15 participants, with 60 trials, 30 per version (static vs. non-interactive). Nine of the participants started with the static version, and six started with the interactive one. Our task accuracy in this case was whether the participant chose the right location and also verifying how far their chair occupancy estimates were from the range we collected within our dataset. Our completion time was the number of seconds that each participant spent per question.
 The guess error in this case is how far off a person’s chair occupancy guess was.
 
-Measure                      Static              Interactive
+![alt text](Assignment3_Task4/visualizations/Assignment3/measurements.jpg)
 
-Correct location chosen     18/30 (60%)         25/30 (83%)
-Guess error, median         11.3%               4.8%
-Guess error, average        21.4%               11.2%
-Time per question, median   70.6s               75.0s
-Time per question, range    25.3 - 323.6s       22.9 - 229.8s
+![alt text](Assignment3_Task4/visualizations/Assignment3/eval_accuracy.png)
 
 Our first visualization focuses on the accuracy between the two different types of charts, with red being static and green being interactive. We organized each question to show the positive differences between the two versions as well. We also showed the chair occupancy guess error alongside it to show both examples of inaccuracies and the differences between the static and interactive visualizations, with the blue triangles showing a negative correlation between each question.
+
+![alt text](Assignment3_Task4/visualizations/Assignment3/eval_time.png)
 
 Our second visualization followed a similar format by demonstrating the completion times per trial, with each triangle illustrating a flat correlation between each person’s time. We also shared each person’s time for the first two compared to the last two questions to show the decrease as participants began to become more used to the formatting of the questions provided.
 
