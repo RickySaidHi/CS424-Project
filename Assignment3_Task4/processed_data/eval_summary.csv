@@ -1,0 +1,3 @@
+condition,Correct (out of 30),Correct (%),"Guess error, median","Guess error, average","Time, median (s)","Time, fastest (s)","Time, slowest (s)"
+Interactive,25,83.3,4.8,11.2,75.0,22.9,229.8
+Static,18,60.0,11.3,21.4,70.6,25.3,323.6
