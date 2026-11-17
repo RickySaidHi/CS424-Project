@@ -541,7 +541,17 @@ After the test is finished, the website prompts users to download their testing 
 * Completion time in seconds
 * Question difficulty and visualization difficulty ratings
 
-## Task Four : Quantitative analysis
+## Task 3
+
+### Conducting the evaluations
+
+We collected from 15 different participants in total, and everyone completed both versions. Each participant’s results were saved in a separate CSV file in `Assignment3_Task4/eval-results`. We plan to combine these files into one table while accounting for individual responses.
+
+Some things to mention from testing were that some participants sometimes missed changes in the questions after reading the first set. To help participants, we reformatted the prompts and bolded the locations, time periods, and weather conditions to draw attention to those changes. As well, we also increased the format of the questions to place emphasis on both questions we ask equally.
+
+## Task 4
+
+### Quantitative analysis
 
 Our data consisted of 15 participants, with 60 trials, 30 per version (static vs. non-interactive). Nine of the participants started with the static version, and six started with the interactive one. Our task accuracy in this case was whether the participant chose the right location and also verifying how far their chair occupancy estimates were from the range we collected within our dataset. Our completion time was the number of seconds that each participant spent per question.
 The guess error in this case is how far off a person’s chair occupancy guess was.
