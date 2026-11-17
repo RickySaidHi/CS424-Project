@@ -571,3 +571,33 @@ Our data showed that the interactive version led to more correct location choice
 Overall, both charts were completed in roughly the same amount of time on average. We included the range of times as well, since users completed the interactive visualizations faster than the static visualizations due to the ease of access when selecting specific sections to see data differences more clearly.
 
 We expected the interactive chart to make people faster and more accurate compared to the static chart. In this case, the time per question remained the same because many users were learning how to use our interactive chart, which did take up time. As for accuracy, our original expectations were correct, as many participants picked the right location and guessed closer with our filtering options. To confirm our hypothesis, we would need to add more participants, as 15 participants can also lead to small biases.
+
+## Task 5
+
+### What we learned
+
+The clearest result from our study is that filtering helped people answer correctly, but it didn't make them faster. Participants chose the correct location in 25 of 30 interactive trials (83%) compared to 18 of 30 static trials (60%), and the interactive version was at least as accurate on every question. Their estimates were also closer, with a median error of 4.8 percentage points compared to 11.3 for the static version. This matches what we expected when we chose the scatterplot. With over 169 overlapping points, it's hard to pick out one lounge at one time of day, and removing everything else lets people actually see the visits they're comparing.
+
+The gains weren't the same on every question, though. Question 1A had the biggest difference, with 8 of 8 interactive participants choosing correctly compared to 3 of 7 static participants. On 1B and 2B, the difference was much smaller, about 5 of 7 correct with interaction compared to 5 of 8 without. So filtering helped most when the points being compared were buried in the busiest part of the chart, and helped much less when the answer was already easy to see.
+
+What surprised us was completion time. We expected filtering to save time, but the interactive version had a slightly higher median time of 75.0 seconds compared to 70.6 seconds for the static version, and it was slower on questions 1A and 2A. Watching participants, the time they saved by not searching through clutter mostly went into figuring out the checkboxes and clicking through them. To isolate two lounges at midday without rain, a participant had to uncheck five lounges, two times of day, and the rain box, which is eight clicks before they could even start comparing. This is even more telling because 9 of our 15 participants used the static version first, and almost everyone got faster on their last two questions, so the interactive version usually had the advantage of coming second and was still not faster.
+
+Interaction also didn't prevent every large error. A few interactive estimates on 1A were still off by around 45 to 55 percentage points, likely from participants who filtered to the wrong lounge or time, or who left the wrong boxes checked. Another weakness in both versions is that our questions asked people to estimate averages, but neither version shows one. Participants had to eyeball the middle of a group of points, which is hard to do precisely even after filtering.
+
+### Recommended improvements
+
+The biggest change we'd make is adding an "only" button next to each checkbox, along with "select all" and "clear all" for each group. Isolating two lounges at midday without rain would go from eight clicks to about three, which goes directly at the time cost we saw on 1A and 2A.
+
+We'd also make the current filter more visible, for example with a short line above the chart like "Showing Montgomery Lounge and Inner Circle, Midday, No rain." This would help catch the large interactive errors where participants likely had the wrong boxes checked without noticing.
+
+We'd add a marker showing the average of the visible points for each lounge, which updates as boxes are checked and unchecked. Since half of every task asked for an estimated average, this would make estimates more consistent. For a fair comparison, the static version would need the same averages, likely as small multiples with one panel per lounge and time of day.
+
+Lastly, we'd group the checkboxes under labeled headers for lounge, time of day, and weather, and move them next to the chart instead of underneath, so participants spend less time figuring out what each box does.
+
+### Limitations
+
+Our study had 15 participants, which is enough to see patterns but not enough to say the results would hold for everyone. Some questions were only answered by 7 or 8 people in each version, so a single participant changes the accuracy on that question by more than 10 percentage points. The participants were college students who are either Computer Science, accounting, or graphic design students. Participants who were used to interactive charts likely picked up the checkboxes faster than others would. Our pilot participants were family members, who may not have caught the same issues that students would.
+
+Learning effects were strong. Thirteen of 15 participants were faster on their last two questions than their first two, some by more than two minutes. Our presentation order also wasn't perfectly balanced, with 9 participants starting on the static version and 6 on the interactive version, which means the interactive version was more often answered second, when participants were already faster. Time results should be read with that in mind. Completion times also varied a lot between people, from about 23 seconds to over 5 minutes, so a few slow trials can shift the averages.
+
+Our tasks had limits too. Both tasks focused on midday and morning visits without rain, so the rain checkbox was barely tested. Words like "typical" and "average" could be read differently, and since participants couldn't use outside tools, estimates depended on how well each person judged the middle of a group of points. We reworded our questions after the pilot to make the changes between variants easier to notice, but participants may still have read some questions differently than intended. Finally, our dataset only covers weekdays from weeks 6 through 9, so the lounges' patterns might look different later in the semester.
