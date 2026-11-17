@@ -545,9 +545,38 @@ After the test is finished, the website prompts users to download their testing 
 
 ### Conducting the evaluations
 
-We collected from 15 different participants in total, and everyone completed both versions. Each participant’s results were saved in a separate CSV file in `Assignment3_Task4/eval-results`. We plan to combine these files into one table while accounting for individual responses.
+Before running the main study, we conducted a pilot with two of Jake's family members, who don't count toward our participants. During the pilot, they sometimes missed changes in the questions after reading the first set. To fix this, we reformatted the prompts and bolded the locations, time periods, and weather conditions to draw attention to those changes. As well, we also adjusted the format of the questions to place emphasis on both questions we ask equally.
 
-Some things to mention from testing were that some participants sometimes missed changes in the questions after reading the first set. To help participants, we reformatted the prompts and bolded the locations, time periods, and weather conditions to draw attention to those changes. As well, we also increased the format of the questions to place emphasis on both questions we ask equally.
+We then collected from 15 different participants in total, and everyone completed both versions. The participants were college students majoring in computer science, accounting, or graphic design. Nine participants started with the static version and six started with the interactive version, and each of the four questions was answered by 7 or 8 participants in each version. Every participant completed all four questions, giving us 60 trials with 30 for each version.
+
+### Recording the results
+
+Each participant's results were saved in a separate CSV file in `Assignment3_Task4/eval-results`. Since participants typed their own number into the website and two numbers were used twice, we gave every participant an anonymous ID from P01 to P15 based on their file. We combined these files into one table, `combined_results.csv`, while keeping every participant's individual responses. Each row is one question answered by one participant.
+
+| Column | Description | Unit |
+| --- | --- | --- |
+| `participant` | Anonymous participant ID | P01 to P15 |
+| `assigned_sequence` | Number the participant entered, which set their question order | 1 to 4 |
+| `study_version` | Version of the study website the participant used | study-1 or study-2 |
+| `first_condition` | Version the participant used first | Static or Interactive |
+| `part_number` | Order the question was answered in | 1 to 4 |
+| `condition` | Version used for this question | Static or Interactive |
+| `task_id` | Analytical task | 1 or 2 |
+| `variant` | Variant of the task | A or B |
+| `question_id` | Question answered | 1A, 1B, 2A, or 2B |
+| `chosen_location` | Location the participant picked | Location name |
+| `expected_location` | Correct location from our dataset | Location name |
+| `location_correct` | Whether the chosen location was correct | 1 = correct, 0 = incorrect |
+| `estimate_pct` | Participant's chair occupancy estimate | Percent |
+| `completion_seconds` | Time from loading the visualization to submitting both answers | Seconds |
+| `question_difficulty` | How difficult the question was | 1 (easy) to 5 (hard) |
+| `visualization_difficulty` | How difficult the visualization was to use | 1 (easy) to 5 (hard) |
+
+### Observations
+
+Most participants got faster as the session went on, with 13 of 15 finishing their last two questions faster than their first two. This suggests participants were getting more comfortable with the question format and the visualizations as they went, regardless of which version they started with.
+
+The difficulty ratings showed a much bigger difference than completion time did. Participants rated the static visualization an average of 4.1 out of 5 for how hard it was to use, compared to 1.7 for the interactive version, and rated the questions themselves 3.3 compared to 2.0. The static version was rated harder to use on every question. Even though both versions took about the same amount of time, participants clearly felt the static version was more work. One likely reason is that the static version required searching for specific colors and shapes among overlapping points, while the interactive version required several checkbox clicks before comparing, which may have balanced out the time.
 
 ## Task 4
 
@@ -580,7 +609,7 @@ The clearest result from our study is that filtering helped people answer correc
 
 The gains weren't the same on every question, though. Question 1A had the biggest difference, with 8 of 8 interactive participants choosing correctly compared to 3 of 7 static participants. On 1B and 2B, the difference was much smaller, about 5 of 7 correct with interaction compared to 5 of 8 without. So filtering helped most when the points being compared were buried in the busiest part of the chart, and helped much less when the answer was already easy to see.
 
-What surprised us was completion time. We expected filtering to save time, but the interactive version had a slightly higher median time of 75.0 seconds compared to 70.6 seconds for the static version, and it was slower on questions 1A and 2A. Watching participants, the time they saved by not searching through clutter mostly went into figuring out the checkboxes and clicking through them. To isolate two lounges at midday without rain, a participant had to uncheck five lounges, two times of day, and the rain box, which is eight clicks before they could even start comparing. This is even more telling because 9 of our 15 participants used the static version first, and almost everyone got faster on their last two questions, so the interactive version usually had the advantage of coming second and was still not faster.
+What surprised us was completion time. We expected filtering to save time, but the interactive version had a slightly higher median time of 75.0 seconds compared to 70.6 seconds for the static version, and it was slower on questions 1A and 2A. Looking at the results, the time they saved by not searching through clutter likely went into figuring out the checkboxes and clicking through them. To isolate two lounges at midday without rain, a participant had to uncheck five lounges, two times of day, and the rain box, which is eight clicks before they could even start comparing. This is even more telling because 9 of our 15 participants used the static version first, and almost everyone got faster on their last two questions, so the interactive version usually had the advantage of coming second and was still not faster.
 
 Interaction also didn't prevent every large error. A few interactive estimates on 1A were still off by around 45 to 55 percentage points, likely from participants who filtered to the wrong lounge or time, or who left the wrong boxes checked. Another weakness in both versions is that our questions asked people to estimate averages, but neither version shows one. Participants had to eyeball the middle of a group of points, which is hard to do precisely even after filtering.
 
